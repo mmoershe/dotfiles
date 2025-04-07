@@ -16,6 +16,7 @@ DOTFILES=(
     bash
     kitty
     starship
+    tmux
 )
 
 ### FUNCTIONS ###
@@ -61,6 +62,13 @@ install_specials() {
     # Starship
     curl -sS https://starship.rs/install.sh | sudo sh
 
+    # TMUX Plugin Manager
+    if [ -d "$HOME/.tmux/plugins/tpm" ]; then
+        echo "TPM already exists"
+    else
+        git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+    fi
+
     # My Neovim-Config
     if [ -d "$HOME/.config/nvim" ]; then
         echo "Neovim-Config already exists."
@@ -93,6 +101,12 @@ stow_dotfiles() {
     echo "[+] Dotfiles symlinked."
 }
 
+final_commands() {
+    echo "[*] Ending with some final commands..."
+    tmux source ~/.tmux.conf
+    echo "[+] Final commands done."
+}
+
 ### MAIN ###
 update_system
 install_packages
@@ -100,5 +114,6 @@ install_flatpaks
 install_specials
 install_fonts
 stow_dotfiles
+final_commands
 
 echo "[✓] All done!"
