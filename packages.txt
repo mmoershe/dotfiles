@@ -5,3 +5,5 @@ kitty
 neovim
 # zsh
 stow
+eza
+bat
