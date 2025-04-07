@@ -14,6 +14,8 @@ FLATPAKS=($(grep -vE '^\s*#|^\s*$' "$FLATPAK_FILE"))
 
 DOTFILES=(
     bash
+    kitty
+    starship
 )
 
 ### FUNCTIONS ###
