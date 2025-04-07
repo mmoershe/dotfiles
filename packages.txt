@@ -3,7 +3,9 @@ gh
 tmux
 kitty
 neovim
+thunderbird
 # zsh
 stow
 eza
 bat
+video-downloader
