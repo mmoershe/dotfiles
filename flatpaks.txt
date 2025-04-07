@@ -1,0 +1,2 @@
+com.bitwarden.desktop
+app.zen_browser.zen

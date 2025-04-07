@@ -9,6 +9,9 @@ FONT_DEST="$HOME/.local/share/fonts"
 PACKAGE_FILE="$SCRIPT_DIR/packages.txt"
 PACKAGES=($(grep -vE '^\s*#|^\s*$' "$PACKAGE_FILE"))
 
+FLATPAK_FILE="$SCRIPT_DIR/flatpaks.txt"
+FLATPAKS=($(grep -vE '^\s*#|^\s*$' "$FLATPAK_FILE"))
+
 DOTFILES=(
     bash
 )
@@ -25,6 +28,26 @@ install_packages() {
     echo "[*] Installing packages..."
     sudo dnf install -y "${PACKAGES[@]}"
     echo "[+] Packages installed."
+}
+
+install_flatpaks() {
+    echo "[*] Installing Flatpaks..."
+    if ! command -v flatpak &>/dev/null; then
+        echo "[!] Flatpak is not installed. Installing it via dnf..."
+        sudo dnf install -y flatpak
+    fi
+
+    # Ensure Flathub is added
+    if ! flatpak remote-list | grep -q flathub; then
+        echo "[*] Adding Flathub remote..."
+        flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    fi
+
+    for pkg in "${FLATPAKS[@]}"; do
+        flatpak install -y --noninteractive flathub "$pkg"
+    done
+
+    echo "[+] Flatpak apps installed."
 }
 
 install_fonts() {
@@ -47,6 +70,7 @@ stow_dotfiles() {
 ### MAIN ###
 update_system
 install_packages
+install_flatpaks
 install_fonts
 stow_dotfiles
 
