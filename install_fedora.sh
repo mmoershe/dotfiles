@@ -50,7 +50,7 @@ install_flatpaks() {
     echo "[+] Flatpak apps installed."
 }
 
-install_special_packages() {
+install_specials() {
     echo "[*] Installing some special packages..."
     # Lazygit
     sudo dnf copr enable atim/lazygit -y
@@ -58,6 +58,14 @@ install_special_packages() {
 
     # Starship
     curl -sS https://starship.rs/install.sh | sudo sh
+
+    # My Neovim-Config
+    if [ -d "$HOME/.config/nvim" ]; then
+        echo "Neovim-Config already exists."
+    else
+        git clone https://github.com/mmoershe/config.nvim "$HOME/.config/nvim"
+    fi
+
     echo "[+] Special packages installed."
 }
 
@@ -82,7 +90,7 @@ stow_dotfiles() {
 update_system
 install_packages
 install_flatpaks
-install_special_packages
+install_specials
 install_fonts
 stow_dotfiles
 
