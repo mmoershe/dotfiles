@@ -50,6 +50,17 @@ install_flatpaks() {
     echo "[+] Flatpak apps installed."
 }
 
+install_special_packages() {
+    echo "[*] Installing some special packages..."
+    # Lazygit
+    sudo dnf copr enable atim/lazygit -y
+    sudo dnf install lazygit -y
+
+    # Starship
+    curl -sS https://starship.rs/install.sh | sudo sh
+    echo "[+] Special packages installed."
+}
+
 install_fonts() {
     echo "[*] Installing fonts from $FONT_DIR..."
     mkdir -p "$FONT_DEST"
@@ -71,6 +82,7 @@ stow_dotfiles() {
 update_system
 install_packages
 install_flatpaks
+install_special_packages
 install_fonts
 stow_dotfiles
 
