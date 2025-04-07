@@ -1,0 +1,7 @@
+git
+gh
+tmux
+kitty
+neovim
+# zsh
+stow
