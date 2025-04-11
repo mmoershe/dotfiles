@@ -16,7 +16,6 @@ alias ls="eza"
 alias lg="lazygit"
 alias vactivate="source venv/bin/activate"
 alias grep="grep --color=auto"
-alias ssh="clear && kitten ssh"
 alias devrun="clear && npm run dev"
 
 # docker
