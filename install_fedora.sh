@@ -3,7 +3,7 @@ set -e # Exit on error
 
 ### SETUP ###
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-FONT_DIR="$SCRIPT_DIR/fonts"
+FONT_DIR="$SCRIPT_DIR/MISC/fonts"
 FONT_DEST="$HOME/.local/share/fonts"
 
 PACKAGE_FILE="$SCRIPT_DIR/packages.txt"
