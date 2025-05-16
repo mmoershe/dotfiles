@@ -8,11 +8,13 @@ cd scripts
 ### SOURCING ###
 source update_fedora.sh
 source install_packages_dnf.sh
+source install_flatpaks.sh
 source stow_all.sh
 
 ### MAIN ###
 update_fedora
 install_packages_dnf
+install_flatpaks
 stow_all
 
 ### EXIT ###
