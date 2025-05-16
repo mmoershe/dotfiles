@@ -1,23 +1,34 @@
 #!/bin/bash
-set -e # Exit on error
 
 ### SETUP ###
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-FONT_DIR="$SCRIPT_DIR/MISC/fonts"
+set -e # Exit on error
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd scripts
+
+### SOURCING ###
+source update_fedora.sh
+source install_packages_dnf.sh
+source stow_all.sh
+
+### MAIN ###
+update_fedora
+install_packages_dnf
+stow_all
+
+### EXIT ###
+echo "[✓] All done!"
+exit
+
+### LEGACY ###
+
+FONT_DIR="$BASE_DIR/MISC/fonts"
 FONT_DEST="$HOME/.local/share/fonts"
 
-PACKAGE_FILE="$SCRIPT_DIR/packages.txt"
+PACKAGE_FILE="$BASE_DIR/packages.txt"
 PACKAGES=($(grep -vE '^\s*#|^\s*$' "$PACKAGE_FILE"))
 
-FLATPAK_FILE="$SCRIPT_DIR/flatpaks.txt"
+FLATPAK_FILE="$BASE_DIR/flatpaks.txt"
 FLATPAKS=($(grep -vE '^\s*#|^\s*$' "$FLATPAK_FILE"))
-
-DOTFILES=(
-    bash
-    kitty
-    starship
-    tmux
-)
 
 ### FUNCTIONS ###
 
@@ -92,15 +103,6 @@ install_fonts() {
     echo "[+] Fonts installed to $FONT_DEST."
 }
 
-stow_dotfiles() {
-    echo "[*] Stowing dotfiles..."
-    cd "$SCRIPT_DIR"
-    for pkg in "${DOTFILES[@]}"; do
-        stow "$pkg"
-    done
-    echo "[+] Dotfiles symlinked."
-}
-
 final_commands() {
     echo "[*] Ending with some final commands..."
     tmux source ~/.tmux.conf
@@ -113,7 +115,7 @@ install_packages
 install_flatpaks
 install_specials
 install_fonts
-stow_dotfiles
+stow_all
 final_commands
 
 echo "[✓] All done!"
