@@ -10,6 +10,7 @@ stow_all() {
         kitty
         starship
         tmux
+        wofi
     )
 
     SCRIPTS_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

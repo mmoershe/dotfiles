@@ -9,3 +9,4 @@ stow
 eza
 bat
 video-downloader
+wofi
