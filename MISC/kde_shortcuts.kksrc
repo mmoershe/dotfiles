@@ -1,6 +1,10 @@
 [ActivityManager][Global Shortcuts]
 switch-to-activity-7c046857-67d8-48cd-8678-3a27abd3ed3d=
 
+[Custom Commands][net.local.wofi.desktop]
+Exec=wofi --show drun
+Name=Wofi
+
 [KDE Keyboard Layout Switcher][Global Shortcuts]
 Switch to Last-Used Keyboard Layout=Meta+Alt+L
 Switch to Next Keyboard Layout=Meta+Alt+K
@@ -292,6 +296,9 @@ playpausemedia=Media Play
 previousmedia=Media Previous
 stopmedia=Media Stop
 
+[net.local.wofi.desktop][Global Shortcuts]
+_launch=Meta
+
 [org.kde.dolphin.desktop][Global Shortcuts]
 _launch=Meta+E
 
@@ -344,7 +351,7 @@ Turn Off Screen=
 powerProfile=Meta+B; Battery
 
 [plasmashell][Global Shortcuts]
-activate application launcher=Meta; Alt+F1
+activate application launcher=Alt+F1
 activate task manager entry 1=
 activate task manager entry 10=
 activate task manager entry 2=
