@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e # Exit on error
 
 stow_all() {
     echo

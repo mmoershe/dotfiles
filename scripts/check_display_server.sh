@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e # Exit on error
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     echo "Your system is using Wayland."

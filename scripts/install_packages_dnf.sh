@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e # Exit on error
 
 install_packages_dnf() {
     echo
