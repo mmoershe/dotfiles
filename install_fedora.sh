@@ -22,6 +22,7 @@ install_specials_dnf
 install_fonts
 stow_all
 
+source ~/.bashrc
 tmux source ~/.tmux.conf
 
 ### EXIT ###
