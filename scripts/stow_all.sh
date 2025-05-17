@@ -11,15 +11,19 @@ stow_all() {
         tmux
     )
 
-    cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    SCRIPTS_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    DOTFILES_DIRECTORY="$(dirname "${SCRIPTS_DIRECTORY}")"
 
     rm -f ~/.bashrc
 
     for pkg in "${DOTFILES[@]}"; do
-        stow "$pkg"
+        (
+            cd ${DOTFILES_DIRECTORY}
+            stow ${pkg}
+        )
         echo "    [✓] stowed "$pkg""
     done
-    echo "[+] Dotfiles symlinked."
+    echo "[✓] Dotfiles symlinked."
     echo
 }
 

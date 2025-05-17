@@ -2,19 +2,22 @@
 
 ### SETUP ###
 set -e # Exit on error
-cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd scripts
+
+DOTFILES_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPTS_DIRECTORY="${DOTFILES_DIRECTORY}/scripts"
 
 ### SOURCING ###
-source update_fedora.sh
-source install_packages_dnf.sh
-source install_flatpaks.sh
-source stow_all.sh
+source "${SCRIPTS_DIRECTORY}/update_fedora.sh"
+source "${SCRIPTS_DIRECTORY}/install_packages_dnf.sh"
+source "${SCRIPTS_DIRECTORY}/install_flatpaks.sh"
+source "${SCRIPTS_DIRECTORY}/install_fonts.sh"
+source "${SCRIPTS_DIRECTORY}/stow_all.sh"
 
 ### MAIN ###
 update_fedora
 install_packages_dnf
 install_flatpaks
+install_fonts
 stow_all
 
 ### EXIT ###

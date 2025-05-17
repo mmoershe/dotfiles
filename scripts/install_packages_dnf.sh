@@ -4,10 +4,10 @@ install_packages_dnf() {
     echo
     echo "[ ] Installing dnf packages..."
 
-    cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    cd ..
+    SCRIPTS_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    DOTFILES_DIRECTORY="$(dirname "${SCRIPTS_DIRECTORY}")"
+    PACKAGE_FILE="${DOTFILES_DIRECTORY}/packages_dnf.txt"
 
-    PACKAGE_FILE="$(pwd)/packages_dnf.txt"
     PACKAGES=($(grep -vE '^\s*#|^\s*$' "$PACKAGE_FILE"))
 
     sudo dnf install -y "${PACKAGES[@]}"
