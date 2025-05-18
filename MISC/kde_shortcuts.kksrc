@@ -301,7 +301,7 @@ previousmedia=Media Previous
 stopmedia=Media Stop
 
 [net.local.toggle_wofi.sh.desktop][Global Shortcuts]
-_launch=Meta
+_launch=Meta+Space
 
 [net.local.wofi.desktop][Global Shortcuts]
 _launch=Meta
