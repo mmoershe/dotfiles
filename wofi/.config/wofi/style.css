@@ -2,6 +2,7 @@ window {
   margin: 0px;
   border: 1px solid #bd93f9;
   background-color: #282a36;
+  border-radius: 1rem;
 }
 
 #input {
@@ -40,10 +41,12 @@ window {
 
 #entry > * {
   color: #f8f8f2;
+  padding-left: 2px;
 }
 
 #entry:selected {
   background-color: #44475a;
+  border-radius: 8px;
 }
 
 #entry:selected #text {
