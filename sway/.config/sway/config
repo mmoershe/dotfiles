@@ -230,4 +230,9 @@ input * {
     xkb_options caps:escape
 }
 
+gaps inner 5 
+gaps outer 5
+
+smart_gaps on
+
 include /etc/sway/config.d/*
