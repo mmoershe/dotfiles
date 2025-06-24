@@ -6,17 +6,18 @@ My dotfiles
 
 ### Sway
 
-| Keybindings                          | Description              |
-| ------------------------------------ | ------------------------ |
-| Windows-Key                          | `Mod`                    |
-| `Mod` + `Return`                     | Open Kitty               |
-| `Mod` + `Space`                      | Open Wofi                |
-| `Mod` + `q`                          | Kill focussed window     |
-| `Mod` + `[1-0]`                      | Switch to workspace      |
-| `Mod` + `Shift` + `[1-0]`            | Move window to workspace |
-| `Mod` + `[Vim directions]`           | Move focus               |
-| `Mod` + `Shift` + `[Vim directions]` | Move focused window      |
-| `Mod` + `Shift` + `c`                | Reload Sway config       |
+| Keybindings                          | Description                |
+| ------------------------------------ | -------------------------- |
+| Windows-Key                          | `Mod`                      |
+| `Mod` + `Return`                     | Open Kitty                 |
+| `Mod` + `Space`                      | Open Wofi                  |
+| `Mod` + `q`                          | Kill focussed window       |
+| `Mod` + `f`                          | Fullscreen focussed window |
+| `Mod` + `[Vim directions]`           | Move focus                 |
+| `Mod` + `Shift` + `[Vim directions]` | Move focused window        |
+| `Mod` + `[1-0]`                      | Switch to workspace        |
+| `Mod` + `Shift` + `[1-0]`            | Move window to workspace   |
+| `Mod` + `Shift` + `c`                | Reload Sway config         |
 
 ### Kitty
 
