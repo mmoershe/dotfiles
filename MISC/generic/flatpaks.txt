@@ -1,3 +1,2 @@
 com.bitwarden.desktop
 app.zen_browser.zen
-com.discordapp.Discord

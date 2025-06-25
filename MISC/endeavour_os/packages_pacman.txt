@@ -16,3 +16,4 @@ networkmanager
 discord
 curl
 wget
+flatpak
