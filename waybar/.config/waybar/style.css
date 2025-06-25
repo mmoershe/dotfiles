@@ -1,156 +1,186 @@
-/* ############# */
-/* COLOR PALETTE */
-/* ############# */
-/* dracula */
-@define-color background #282a36;
-@define-color current_line #44475a;
-@define-color selection #44475a;
-@define-color foreground #f8f8f2;
-@define-color comment #6272a4;
-@define-color cyan #8be9fd;
-@define-color green #50fa7b;
-@define-color orange #ffb86c;
-@define-color pink #ff79c6;
-@define-color purple #bd93f9;
-@define-color red #ff5555;
-@define-color yellow #f1fa8c;
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
 
+/* -----------------------------------------------------------------------------
+ * Keyframes
+ * -------------------------------------------------------------------------- */
+
+@define-color highlight #685878 ;
+@define-color base1  #19191e ;
+
+@keyframes blink-warning {
+    70% {
+        color: white;
+    }
+
+    to {
+        color: white;
+        background-color: orange;
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+      color: white;
+    }
+
+    to {
+        color: white;
+        background-color: red;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+ * Base styles
+ * -------------------------------------------------------------------------- */
+
+/* Reset all styles */
 * {
-  font-family: "JetBrainsMono Nerd Font";
-  /* font-family: "MesloLGSDZ Nerd Font"; */
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 1px;
+    padding: 0;
 }
 
-/* Making the entire bar transparent */
-window#waybar {
-  background-color: rgba(0, 0, 0, 0);
-  color: @foreground;
+/* The whole bar */
+#waybar {
+    background: transparent;
+    color: #e3e3ea;
+    background-color: @base1;
+    font-family: JetBrainsMono;
+    font-size: 13px;
 }
 
-.modules-center {
-  border-radius: 0 0 0.8rem 0.8rem;
-}
-
-/* ALL */
-#workspaces {
-  color: white;
-  margin: 4px 0px 4px 0px;
-  border: 0px solid #181825;
-}
-
-/* #### */
-/* LEFT */
-/* #### */
-#window {
-  border-radius: 1rem;
-  padding: 0 15px 0 15px;
-}
-#window {
-  color: @purple;
-  background-color: @current_line;
-}
-window#waybar.empty #window {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-/* ###### */
-/* CENTER */
-/* ###### */
-.modules-center {
-  border-radius: 1rem;
-  opacity: 1;
-  background-color: @background;
-  padding: 0 0.5rem 0 0.5rem;
-}
-#workspaces {
-  opacity: 1;
-  color: @foreground;
-}
-#workspaces button {
-  box-shadow: none;
-  text-shadow: none;
-  padding: 0px;
-  border-radius: 9px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
-  color: @foreground;
-  animation: gradient_f 20s ease-in infinite;
-  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-}
-#workspaces button.active {
-  background: @red;
-  color: @foreground;
-  margin-left: 3px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-right: 3px;
-  animation: gradient_f 20s ease-in infinite;
-  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-}
-#workspaces button:hover {
-  background: @cyan;
-  border: none;
-}
-#workspaces {
-  padding: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-/* ##### */
-/* RIGHT */
-/* ##### */
-.modules-right {
-  background-color: rgba(0, 0, 0, 0);
-}
-#battery,
-#backlight,
-#temperature,
-#clock,
+/* Every modules */
+#mode,
 #network,
+#custom-keyboard-layout,
+#idle_inhibitor,
 #cpu,
 #memory,
-#pulseaudio {
-  border-radius: 1rem;
-  padding: 0 15px 0 15px;
+#backlight,
+#pulseaudio,
+#battery,
+#clock,
+#tray {
+    padding:0.5rem 0.6rem;
+    margin: 1px 0px;
 }
-#battery {
-  margin: 0;
-  background-color: @cyan;
-  color: @background;
+
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+#custom-launcher {
+    margin-left:15px;
+    margin-right:10px;
 }
-#backlight {
-  background-color: @pink;
-  color: black;
+
+#workspaces {
+    font-size:13px;
 }
-#temperature {
-  margin: 0;
-  background-color: @purple;
-  color: @background;
+
+#workspaces button {
+    border-radius: 5px;
+    color: #eceff4;
+    padding: 1px 6px;
+    margin-right: 2px;
+    margin-left: 2px;
 }
-#clock {
-  /* margin: 0; */
-  background-color: @orange;
-  color: @background;
+
+#workspaces button.focused {
+    border: 1px solid #d8dee9;
 }
-#cpu {
-  background-color: @current_line;
+
+#workspaces button.urgent {
+    border-color: #c9545d;
+    color: #c9545d;
 }
+
+#mode {
+    background: @highlight;
+    border-bottom: 3px transparent;
+    color:white;
+    margin-left: 5px;
+    padding: 7px;
+}
+
+#window {
+    font-weight: bold;
+}
+
+#network.disconnected {
+    color: orange;
+}
+
+#cpu.warning {
+    color: orange;
+}
+
+#cpu.critical {
+    color: red;
+}
+
 #memory {
-  background-color: @comment;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-#network {
-  margin: 0;
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
-  background-color: @background;
-  /* colors are defined in the modules itself */
+
+#memory.warning {
+    color: orange;
+ }
+
+#memory.critical {
+    color: red;
+    animation-name: blink-critical;
+    animation-duration: 2s;
+    padding-left:5px;
+    padding-right:5px;
 }
+
+#backlight.icon {
+}
+
 #pulseaudio {
-  background-color: @yellow;
-  color: black;
 }
+
 #pulseaudio.muted {
-  background-color: @red;
+    color: @highlight;
+}
+
+#battery {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.warning {
+    color: orange;
+}
+
+#battery.critical {
+    color: red;
+}
+
+#battery.warning.discharging {
+    animation-name: blink-warning;
+    animation-duration: 3s;
+}
+
+#battery.critical.discharging {
+    animation-name: blink-critical;
+    animation-duration: 2s;
+}
+
+#custom-power {
+    margin-left:15px;
+    margin-right:15px;
+    font-size:15px;
 }
