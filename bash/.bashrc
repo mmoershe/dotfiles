@@ -5,8 +5,8 @@
 eval "$(starship init bash)"
 
 # TERMINAL STARTUP
-fastfetch -c paleofetch
 echo
+fastfetch -c paleofetch
 
 # ****
 # ALIAS
