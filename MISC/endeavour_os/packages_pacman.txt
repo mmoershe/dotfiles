@@ -1,0 +1,18 @@
+git
+github-cli
+tmux
+kitty
+neovim
+thunderbird
+# zsh
+stow
+eza
+bat
+wofi
+waybar
+starship
+lazygit
+networkmanager
+discord
+curl
+wget
