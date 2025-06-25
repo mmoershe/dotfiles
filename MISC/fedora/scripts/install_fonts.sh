@@ -6,8 +6,7 @@ install_fonts() {
     echo "[ ] Installing fonts..."
 
     SCRIPTS_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    DOTFILES_DIRECTORY="$(dirname "${SCRIPTS_DIRECTORY}")"
-    MISC_DIRECTORY="${DOTFILES_DIRECTORY}/MISC"
+    MISC_DIRECTORY="$(dirname "${SCRIPTS_DIRECTORY}")"
 
     FONTS_DIRECTORY="${MISC_DIRECTORY}/fonts"
     FONT_DEST="$HOME/.local/share/fonts"
