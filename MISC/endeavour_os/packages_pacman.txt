@@ -21,3 +21,4 @@ libreoffice-still
 flameshot
 gcc
 npm
+fastfetch
