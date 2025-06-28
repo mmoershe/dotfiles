@@ -1,0 +1,15 @@
+# Windows key
+set $mod Mod4
+
+# Vim Directions
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Applications
+set $term kitty
+set $menu wofi --show drun 
+
+# Directories
+set $wallpaper_directory $HOME/Pictures/wallpapers/wallpaper.jpg

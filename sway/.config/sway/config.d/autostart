@@ -1,0 +1,3 @@
+exec_always bash -c "pkill waybar; waybar"
+
+output * bg $wallpaper_directory fill
