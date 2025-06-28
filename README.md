@@ -4,20 +4,47 @@ My dotfiles
 
 ## Keybindings
 
+The general idea of the keybindings is the following:
+
+| Super-Key   | Scope                                   |
+| ----------- | --------------------------------------- |
+| Windows-Key | Sway Navigation                         |
+| ALT-Key     | TMUX Navigation                         |
+| CTRL-Key    | Navigation inside the application       |
+| Shift-Key   | Navigate buffers inside a NeoVim window |
+
 ### Sway
 
-| Keybindings                          | Description                |
-| ------------------------------------ | -------------------------- |
-| Windows-Key                          | `Mod`                      |
-| `Mod` + `Return`                     | Open Kitty                 |
-| `Mod` + `Space`                      | Open Wofi                  |
-| `Mod` + `q`                          | Kill focussed window       |
-| `Mod` + `f`                          | Fullscreen focussed window |
-| `Mod` + `[Vim directions]`           | Move focus                 |
-| `Mod` + `Shift` + `[Vim directions]` | Move focused window        |
-| `Mod` + `[1-0]`                      | Switch to workspace        |
-| `Mod` + `Shift` + `[1-0]`            | Move window to workspace   |
-| `Mod` + `Shift` + `c`                | Reload Sway config         |
+#### Workspaces
+
+In my Sway setup, every workspace has a _purpose_.
+
+| Index | Workspace    | Keybinding       | Move to workspace          |
+| ----- | ------------ | ---------------- | -------------------------- |
+| 1     | Terminal     | `MOD` + `Return` | `MOD` + `Shift` + `Return` |
+| 2     | Browser      | `MOD` + `b`      | `MOD` + `Shift` `b`        |
+| 5     | File-Browser | `MOD` + `z`      | `MOD` + `Shift` + `z`      |
+| 9     | Chat         | `MOD` + `i`      | `MOD` + `Shift` + `i`      |
+
+> (`MOD` + `{INDEX}`) or (`MOD` + `Shift` + `{INDEX}`) still exists as a backup!
+
+#### Windows
+
+| Keybindings                         | Description          |
+| ----------------------------------- | -------------------- |
+| `MOD` + `{Vim Direction}`           | Move focus           |
+| `MOD` + `Shift` + `{Vim Direction}` | Move focussed window |
+
+#### Applications
+
+| Keybindings               | Description                |
+| ------------------------- | -------------------------- |
+| Windows-Key               | `Mod`                      |
+| `Mod` + `CTRL` + `Return` | Open Kitty                 |
+| `Mod` + `CTRL` + `Space`  | Open Wofi                  |
+| `Mod` + `q`               | Kill focussed window       |
+| `Mod` + `CTRL` + `f`      | Fullscreen focussed window |
+| `Mod` + `Shift` + `c`     | Reload Sway config         |
 
 ### Kitty
 
