@@ -48,7 +48,7 @@ In my Sway setup, every workspace has a _purpose_.
 
 There are machine-specific overrides for Sway, mostly for output stuff.
 Set the `$machine` variable in `$HOME/.config/sway/config.d/vars` to the machine.
-It will load the corresponding `$HOME/.config/sway/config.d/overrides/$machine`
+It will load the corresponding `$HOME/.config/sway/config.d/overrides/$machine` config file.
 
 ## Kitty
 
