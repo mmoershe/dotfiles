@@ -26,7 +26,7 @@ In my Sway setup, every workspace has a _purpose_.
 | 5     | File-Browser | `MOD` + `z`      | `MOD` + `Shift` + `z`      |
 | 9     | Chat         | `MOD` + `i`      | `MOD` + `Shift` + `i`      |
 
-> (`MOD` + `{INDEX}`) or (`MOD` + `Shift` + `{INDEX}`) still exists as a backup!
+> (`MOD` + `{INDEX}`) and (`MOD` + `Shift` + `{INDEX}`) still exist as a backup!
 
 #### Windows
 
