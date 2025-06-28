@@ -1,6 +1,9 @@
 # Windows key
 set $mod Mod4
 
+# Machines
+set $machine MACHINE_VARIABLE
+
 # Vim Directions
 set $left h
 set $down j

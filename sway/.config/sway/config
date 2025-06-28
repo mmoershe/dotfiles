@@ -13,3 +13,5 @@ include $HOME/.config/sway/config.d/workspaces
 include $HOME/.config/sway/config.d/theme
 include $HOME/.config/sway/config.d/autostart
 include $HOME/.config/sway/config.d/monitor
+
+include $HOME/.config/sway/config.d/overrides/$machine

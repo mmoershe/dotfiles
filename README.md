@@ -2,8 +2,6 @@
 
 My dotfiles
 
-## Keybindings
-
 The general idea of the keybindings is the following:
 
 | Super-Key   | Scope                                   |
@@ -13,9 +11,9 @@ The general idea of the keybindings is the following:
 | CTRL-Key    | Navigation inside the application       |
 | Shift-Key   | Navigate buffers inside a NeoVim window |
 
-### Sway
+## Sway
 
-#### Workspaces
+### Workspaces
 
 In my Sway setup, every workspace has a _purpose_.
 
@@ -28,14 +26,14 @@ In my Sway setup, every workspace has a _purpose_.
 
 > (`MOD` + `{INDEX}`) and (`MOD` + `Shift` + `{INDEX}`) still exist as a backup!
 
-#### Windows
+### Windows
 
 | Keybindings                         | Description          |
 | ----------------------------------- | -------------------- |
 | `MOD` + `{Vim Direction}`           | Move focus           |
 | `MOD` + `Shift` + `{Vim Direction}` | Move focussed window |
 
-#### Applications
+### Applications
 
 | Keybindings               | Description                |
 | ------------------------- | -------------------------- |
@@ -46,7 +44,13 @@ In my Sway setup, every workspace has a _purpose_.
 | `Mod` + `CTRL` + `f`      | Fullscreen focussed window |
 | `Mod` + `Shift` + `c`     | Reload Sway config         |
 
-### Kitty
+### Overrides
+
+There are machine-specific overrides for Sway, mostly for output stuff.
+Set the `$machine` variable in `$HOME/.config/sway/config.d/vars` to the machine.
+It will load the corresponding `$HOME/.config/sway/config.d/overrides/$machine`
+
+## Kitty
 
 | Keybindings      | Description                 |
 | ---------------- | --------------------------- |
@@ -56,7 +60,7 @@ In my Sway setup, every workspace has a _purpose_.
 | `Mod` + `F2`     | Open Kitty config           |
 | `Mod` + `F5`     | Reload Kitty config         |
 
-### TMUX
+## TMUX
 
 | Keybindings              | Description                 |
 | ------------------------ | --------------------------- |
@@ -66,4 +70,4 @@ In my Sway setup, every workspace has a _purpose_.
 | `ALT` + `[1-0]`          | Select Window               |
 | `ALT` + (`h` OR `l`)     | Select previous/next window |
 
-### NeoVim
+## NeoVim
