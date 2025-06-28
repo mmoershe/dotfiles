@@ -19,3 +19,5 @@ wget
 flatpak
 libreoffice-still
 flameshot
+gcc
+npm
