@@ -3,6 +3,7 @@ github-cli
 tmux
 kitty
 neovim
+vim
 thunderbird
 # zsh
 stow
