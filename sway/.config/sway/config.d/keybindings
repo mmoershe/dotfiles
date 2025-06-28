@@ -1,7 +1,9 @@
 # Applications
 bindsym $mod+Return exec $term
 bindsym $mod+q kill
-bindsym $mod+Space exec $menu
+bindsym $mod+Space exec $launcher
+bindsym $mod+Control+Space exec $menu
+bindsym $mod+Shift+q exec $powermenu
 
 # Moving around
 ## Move focus
