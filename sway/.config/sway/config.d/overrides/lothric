@@ -1,1 +1,18 @@
 # Specific sway config for the Lothric machine
+
+set $main_monitor HDMI-A-2
+set $secondary_monitor HDMI-A-1
+
+workspace 1 output $main_monitor
+workspace 2 output $main_monitor
+workspace 3 output $main_monitor
+workspace 4 output $main_monitor
+workspace 5 output $main_monitor
+workspace 6 output $main_monitor
+workspace 7 output $main_monitor
+workspace 8 output $main_monitor
+workspace 9 output $main_monitor
+workspace 0 output $main_monitor
+
+bindsym $mod+Control+Shift+1 move workspace to output $main_monitor
+bindsym $mod+Control+Shift+2 move workspace to output $secondary_monitor
