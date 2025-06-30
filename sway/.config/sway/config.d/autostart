@@ -1,3 +1,8 @@
+# Focus workspace 1 on startup
+exec swaymsg workspace number 1
+
+exec $term
+
 exec_always bash -c "pkill waybar; waybar"
 
 output * bg $wallpaper_directory fill
