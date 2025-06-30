@@ -24,3 +24,4 @@ gcc
 npm
 fastfetch
 dolphin
+yt-dlp
