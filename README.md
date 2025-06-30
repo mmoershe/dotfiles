@@ -17,12 +17,14 @@ The general idea of the keybindings is the following:
 
 In my Sway setup, every workspace has a _purpose_.
 
-| Index | Workspace    | Keybinding       | Move to workspace          |
-| ----- | ------------ | ---------------- | -------------------------- |
-| 1     | Terminal     | `MOD` + `Return` | `MOD` + `Shift` + `Return` |
-| 2     | Browser      | `MOD` + `b`      | `MOD` + `Shift` `b`        |
-| 5     | File-Browser | `MOD` + `z`      | `MOD` + `Shift` + `z`      |
-| 9     | Chat         | `MOD` + `i`      | `MOD` + `Shift` + `i`      |
+| Index | Workspace         | Keybinding       | Move to workspace          |
+| ----- | ----------------- | ---------------- | -------------------------- |
+| 1     | Terminal          | `MOD` + `Return` | `MOD` + `Shift` + `Return` |
+| 2     | Terminal 2 / Code |                  |                            |
+| 3     | Browser           | `MOD` + `b`      | `MOD` + `Shift` `b`        |
+| 4     | Variable          |                  |                            |
+| 5     | File-Browser      | `MOD` + `z`      | `MOD` + `Shift` + `z`      |
+| 9     | Chat              | `MOD` + `i`      | `MOD` + `Shift` + `i`      |
 
 > (`MOD` + `{INDEX}`) and (`MOD` + `Shift` + `{INDEX}`) still exist as a backup!
 
