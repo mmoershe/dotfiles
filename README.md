@@ -20,9 +20,9 @@ In my Sway setup, every workspace has a _purpose_.
 | Index | Workspace         | Keybinding       | Move to workspace          |
 | ----- | ----------------- | ---------------- | -------------------------- |
 | 1     | Terminal          | `MOD` + `Return` | `MOD` + `Shift` + `Return` |
-| 2     | Terminal 2 / Code |                  |                            |
+| 2     | Terminal 2 / Code | `MOD` + `n`      | `MOD` + `Shift` + `n`      |
 | 3     | Browser           | `MOD` + `b`      | `MOD` + `Shift` `b`        |
-| 4     | Variable          |                  |                            |
+| 4     | Variable          | `MOD` + `m`      | `MOD` + `Shift` + `m`      |
 | 5     | File-Browser      | `MOD` + `z`      | `MOD` + `Shift` + `z`      |
 | 9     | Chat              | `MOD` + `i`      | `MOD` + `Shift` + `i`      |
 

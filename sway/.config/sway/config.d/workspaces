@@ -4,11 +4,22 @@ assign [app_id=$term] 1
 bindsym $mod+Return workspace number 1
 bindsym $mod+Shift+Return move container to workspace number 1
 
+# 2
+workspace 2 name "Terminal 2 / Code"
+assign [app_id=codium] 2
+bindsym $mod+n workspace number 2
+bindsym $mod+Shift+n move container to workspace number 2
+
 # 3
 workspace 3 name "Browser"
 assign [app_id="zen"] 3
 bindsym $mod+b workspace number 3
 bindsym $mod+Shift+b move container to workspace number 3
+
+# 4
+workspace 4 name "Variable"
+bindsym $mod+m workspace number 4
+bindsym $mod+Shift+m move container to workspace number 4
 
 # 5
 workspace 5 name "File-Browser"
@@ -25,7 +36,6 @@ bindsym $mod+Shift+i move container to workspace number 9
 
 
 
-workspace 3 name "Variable"
 
 # Navigating using index backup
 bindsym $mod+1 workspace number 1
