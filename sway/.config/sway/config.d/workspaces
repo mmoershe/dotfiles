@@ -27,6 +27,21 @@ assign [app_id=$file-browser] 5
 bindsym $mod+z workspace number 5
 bindsym $mod+Shift+z move container to workspace number 5
 
+# 6
+workspace 6 name "Variable 6"
+bindsym $mod+u workspace number 6
+bindsym $mod+Shift+u move container to workspace number 6
+
+# 7
+workspace 7 name "Variable 7"
+bindsym $mod+o workspace number 7
+bindsym $mod+Shift+o move container to workspace number 7
+
+# 8
+workspace 8 name "Private Browser"
+bindsym $mod+p workspace number 8
+bindsym $mod+Shift+p move container to workspace number 8
+
 # 9
 workspace 9 name "Chat"
 assign [class="discord"] 9
