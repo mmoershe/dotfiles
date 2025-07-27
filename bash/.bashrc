@@ -12,7 +12,6 @@ fastfetch -c paleofetch
 # ALIAS
 # ****
 # alias ls="ls --color=auto"
-alias ls="eza"
 alias lg="lazygit"
 alias vactivate="source venv/bin/activate"
 alias grep="grep --color=auto"
