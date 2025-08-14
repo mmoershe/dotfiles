@@ -2,6 +2,7 @@
 exec swaymsg workspace number 1
 
 exec $term
+exec mako
 
 exec_always bash -c "pkill waybar; waybar"
 

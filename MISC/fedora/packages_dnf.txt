@@ -6,7 +6,7 @@ neovim
 thunderbird
 # zsh
 stow
-eza
 bat
 video-downloader
 wofi
+mako
