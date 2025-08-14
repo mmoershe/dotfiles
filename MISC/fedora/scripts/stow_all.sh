@@ -11,10 +11,14 @@ stow_all() {
         starship
         tmux
         wofi
+        sway
+        waybar
     )
 
     SCRIPTS_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    DOTFILES_DIRECTORY="$(dirname "${SCRIPTS_DIRECTORY}")"
+    FEDORA_DIRECTORY="$(dirname "${SCRIPTS_DIRECTORY}")"
+    MISC_DIRECTORY="$(dirname "${FEDORA_DIRECTORY}")"
+    DOTFILES_DIRECTORY="$(dirname "${MISC_DIRECTORY}")"
 
     rm -f ~/.bashrc
 

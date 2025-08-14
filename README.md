@@ -1,5 +1,15 @@
 # dotfiles
 
+## Fedora Quickstart
+
+```bash
+sudo dnf update -y && sudo dnf install git -y && git clone https://github.com/mmoershe/dotfiles ~/dotfiles && bash ~/dotfiles/MISC/fedora/install_fedora.sh
+```
+
+Press `MOD + Shift + c` to reload the new Sway-Config!
+
+---
+
 My dotfiles
 
 The general idea of the keybindings is the following:
@@ -8,7 +18,7 @@ The general idea of the keybindings is the following:
 | ----------- | --------------------------------------- |
 | Windows-Key | Sway Navigation                         |
 | ALT-Key     | TMUX Navigation                         |
-| CTRL-Key    | Navigation inside the application       |
+| CTRL-Key    | Navigation inside an application        |
 | Shift-Key   | Navigate buffers inside a NeoVim window |
 
 ## Sway
