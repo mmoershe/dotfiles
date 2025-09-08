@@ -86,7 +86,7 @@ It will load the corresponding `$HOME/.config/sway/config.d/overrides/$machine` 
 
 ## Firefox
 
-I use the `Vimium C - All by Keyboard` extension with the following adjustments:
+I use the `Vimium C - All by Keyboard` extension with the following _Custom Key Mappings_:
 
 ```txt
 map J nextTab
