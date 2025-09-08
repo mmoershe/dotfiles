@@ -83,3 +83,12 @@ It will load the corresponding `$HOME/.config/sway/config.d/overrides/$machine` 
 | `ALT` + (`h` OR `l`)     | Select previous/next window |
 
 ## NeoVim
+
+## Firefox
+
+I use the `Vimium C - All by Keyboard` extension with the following adjustments:
+
+```txt
+map J nextTab
+map K previousTab
+```
