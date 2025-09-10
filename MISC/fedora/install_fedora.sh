@@ -26,8 +26,15 @@ install_fonts
 download_wallpapers
 stow_all
 
+echo "[ ] Reloading configs..."
 source ~/.bashrc
+echo "    [✓] Sourced .bashrc"
 tmux source ~/.tmux.conf
+echo "    [✓] Sourced Tmux config"
+swaymsg reload
+echo "    [✓] Reloaded Sway config"
+echo "[✓] Reloaded Sway config!"
+echo
 
 ### EXIT ###
 echo "[✓] All done!"
