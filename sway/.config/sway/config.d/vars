@@ -13,6 +13,7 @@ set $right l
 # Applications
 set $term kitty
 set $file-browser dolphin
+set $browser firefox
 set $launcher wofi --show drun 
 set $menu nwg-drawer
 set $powermenu $HOME/.config/sway/scripts/power_menu.sh

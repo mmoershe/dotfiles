@@ -12,7 +12,7 @@ bindsym $mod+Shift+n move container to workspace number 2
 
 # 3
 workspace 3 name "Browser"
-assign [app_id="zen"] 3
+assign [app_id="firefox"] 3
 bindsym $mod+b workspace number 3
 bindsym $mod+Shift+b move container to workspace number 3
 
