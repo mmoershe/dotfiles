@@ -27,14 +27,17 @@ The general idea of the keybindings is the following:
 
 In my Sway setup, every workspace has a _purpose_.
 
-| Index | Workspace         | Keybinding       | Move to workspace          |
-| ----- | ----------------- | ---------------- | -------------------------- |
-| 1     | Terminal          | `MOD` + `Return` | `MOD` + `Shift` + `Return` |
-| 2     | Terminal 2 / Code | `MOD` + `n`      | `MOD` + `Shift` + `n`      |
-| 3     | Browser           | `MOD` + `b`      | `MOD` + `Shift` `b`        |
-| 4     | Variable          | `MOD` + `m`      | `MOD` + `Shift` + `m`      |
-| 5     | File-Browser      | `MOD` + `z`      | `MOD` + `Shift` + `z`      |
-| 9     | Chat              | `MOD` + `i`      | `MOD` + `Shift` + `i`      |
+| Index | Name         | Purpose                           | Key      |
+| ----- | ------------ | --------------------------------- | -------- |
+| 1     | Terminal     | Main Terminal _(NeoVim, ...)_     | `Return` |
+| 2     | Terminal-2   | Static / Secondary Terminal       | `n`      |
+| 3     | Codium       | Secondary Code _(VSCodium)_       | `m`      |
+| 4     | Browser      | Main Browser                      | `b`      |
+| 5     | Browser-2    | Secondary / Private Browser       | `p`      |
+| 6     | File-Browser | _(Dolphin, Thunar, ...)_          | `z`      |
+| 7     | Variable     | Everything else                   | `u`      |
+| 8     | E-Mail       | _(Thunderbird)_                   | `o`      |
+| 9     | Chat         | _(WhatsApp, Discord, Slack, ...)_ | `i`      |
 
 > (`MOD` + `{INDEX}`) and (`MOD` + `Shift` + `{INDEX}`) still exist as a backup!
 

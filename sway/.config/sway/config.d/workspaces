@@ -5,47 +5,49 @@ bindsym $mod+Return workspace number 1
 bindsym $mod+Shift+Return move container to workspace number 1
 
 # 2
-workspace 2 name "Terminal 2 / Code"
-assign [app_id=codium] 2
+workspace 2 name "Terminal-2"
 bindsym $mod+n workspace number 2
 bindsym $mod+Shift+n move container to workspace number 2
 
 # 3
-workspace 3 name "Browser"
-assign [app_id="firefox"] 3
-bindsym $mod+b workspace number 3
-bindsym $mod+Shift+b move container to workspace number 3
+workspace 3 name "Codium"
+assign [app_id=codium] 3
+bindsym $mod+m workspace number 3
+bindsym $mod+Shift+m move container to workspace number 3
 
 # 4
-workspace 4 name "Variable"
-bindsym $mod+m workspace number 4
-bindsym $mod+Shift+m move container to workspace number 4
+workspace 4 name "Browser"
+assign [app_id="firefox"] 4
+bindsym $mod+b workspace number 4
+bindsym $mod+Shift+b move container to workspace number 4
 
 # 5
-workspace 5 name "File-Browser"
-assign [app_id=$file-browser] 5
-bindsym $mod+z workspace number 5
-bindsym $mod+Shift+z move container to workspace number 5
+workspace 5 name "Browser-2"
+bindsym $mod+p workspace number 5
+bindsym $mod+Shift+p move container to workspace number 5
 
 # 6
-workspace 6 name "Variable 6"
-bindsym $mod+u workspace number 6
-bindsym $mod+Shift+u move container to workspace number 6
+workspace 6 name "File-Browser"
+assign [app_id=$file-browser] 6
+bindsym $mod+z workspace number 6
+bindsym $mod+Shift+z move container to workspace number 6
 
 # 7
-workspace 7 name "Variable 7"
-bindsym $mod+o workspace number 7
-bindsym $mod+Shift+o move container to workspace number 7
+workspace 7 name "Variable"
+bindsym $mod+u workspace number 7
+bindsym $mod+Shift+u move container to workspace number 7
 
 # 8
-workspace 8 name "Private Browser"
-bindsym $mod+p workspace number 8
-bindsym $mod+Shift+p move container to workspace number 8
+workspace 8 name "E-Mail"
+assign [app_id="thunderbird"] 8
+bindsym $mod+o workspace number 8
+bindsym $mod+Shift+o move container to workspace number 8
 
 # 9
 workspace 9 name "Chat"
 assign [class="discord"] 9
 assign [class="elecwhat"] 9
+assign [class="slack"] 9
 bindsym $mod+i workspace number 9
 bindsym $mod+Shift+i move container to workspace number 9
 
@@ -74,4 +76,3 @@ bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 0
-
