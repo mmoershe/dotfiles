@@ -16,3 +16,4 @@ bluez-tools
 blueman
 yad
 mediawriter
+flatpak
