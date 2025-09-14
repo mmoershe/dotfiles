@@ -11,3 +11,7 @@ video-downloader
 wofi
 mako
 dolphin
+bluez
+bluez-tools
+blueman
+yad
