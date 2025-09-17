@@ -3,7 +3,7 @@ gaps outer 5
 
 smart_gaps on
 
-default_border pixel 1
+default_border pixel 3
 
 
 # class                 border  bground text    indicator child_border
