@@ -10,8 +10,6 @@
 sudo dnf update -y && sudo dnf install git -y && git clone https://github.com/mmoershe/dotfiles ~/dotfiles && bash ~/dotfiles/MISC/fedora/install_fedora.sh
 ```
 
-Press `MOD + Shift + c` to reload the new Sway-Config!
-
 ---
 
 My dotfiles
@@ -26,6 +24,8 @@ The general idea of the keybindings is the following:
 | Shift-Key   | Navigate buffers inside a NeoVim window |
 
 ## Sway
+
+Press `MOD + Shift + c` to reload the Sway-Config!
 
 ### Workspaces
 
