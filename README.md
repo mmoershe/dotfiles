@@ -2,7 +2,6 @@
 
 ## TODO
 
-- add flathub in current flatpak script
 - fastfetch?
 
 ## Fedora Quickstart

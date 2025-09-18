@@ -15,6 +15,13 @@ install_flatpaks() {
         exit 1
     fi
 
+    # Ensure Flathub is added
+    if ! flatpak remote-list | grep -q flathub; then
+        echo "    [ ] Adding Flathub remote..."
+        sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        echo "    [✓] Added Flathub remote..."
+    fi
+
     for pkg in "${FLATPAKS[@]}"; do
         flatpak install -y --noninteractive flathub "$pkg"
         echo "    [✓] Installed "$pkg""
