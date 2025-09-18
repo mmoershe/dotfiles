@@ -17,3 +17,4 @@ blueman
 yad
 mediawriter
 flatpak
+fastfetch

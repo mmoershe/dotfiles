@@ -1,9 +1,5 @@
 # dotfiles
 
-## TODO
-
-- fastfetch?
-
 ## Fedora Quickstart
 
 ```bash
