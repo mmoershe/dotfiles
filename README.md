@@ -3,7 +3,6 @@
 ## TODO
 
 - add flathub in current flatpak script
-- use generic tpm install instead of doing it in special dnf script. (catppuccin stuff is missing)
 - fastfetch?
 
 ## Fedora Quickstart

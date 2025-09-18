@@ -14,13 +14,6 @@ install_specials_dnf() {
     curl -sS https://starship.rs/install.sh | sudo sh
     echo "    [✓] Installed Starship"
 
-    # TMUX Plugin Manager
-    if [ -d "$HOME/.tmux/plugins/tpm" ]; then
-        echo "TPM already exists"
-    else
-        git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
-    fi
-
     # My Neovim-Config
     if [ -d "$HOME/.config/nvim" ]; then
         echo "Neovim-Config already exists."
