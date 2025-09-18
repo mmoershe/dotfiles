@@ -31,8 +31,7 @@ download_wallpapers() {
         ((count++))
     done
 
-    echo "${PACKAGES[@]}"
-
+    echo
     echo "[+] Wallpapers downloaded."
 }
 

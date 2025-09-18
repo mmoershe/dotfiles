@@ -3,7 +3,6 @@
 ## TODO
 
 - add flathub in current flatpak script
-- remove unnecessary packages print in wallpapers script (what the helli?????)
 - use generic tpm install instead of doing it in special dnf script. (catppuccin stuff is missing)
 - fastfetch?
 
