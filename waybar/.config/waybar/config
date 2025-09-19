@@ -74,7 +74,7 @@
         "format-ethernet": "󰈀 {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "format-disconnected": " Disconnected",
-        "on-click": "footclient -T waybar_nmtui -e nmtui",
+        "on-click": "kitty -T waybar_nmtui nmtui",
         "interval": 2
     },
 
