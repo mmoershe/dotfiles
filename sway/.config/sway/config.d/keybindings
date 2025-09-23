@@ -86,4 +86,7 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
 # mouse button for dragging.
 floating_modifier $mod normal
 
+# Dismiss last mako notification with $mod+Backspace
+bindsym $mod+Backspace exec makoctl dismiss
+
 bindsym $mod+Shift+c reload
