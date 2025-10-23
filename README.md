@@ -3,7 +3,7 @@
 ## Omarchy
 
 ```bash
-stow --dir=$HOME/dotfiles/dotfiles/platforms/omarchy --target=$HOME bash
+stow --dir=$HOME/dotfiles/platforms/omarchy --target=$HOME bash
 ```
 
 ## LEGACY
