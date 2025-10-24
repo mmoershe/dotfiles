@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 set -euo pipefail
 
 DOTFILES_DIR="$HOME/dotfiles/platforms/omarchy"
