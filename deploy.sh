@@ -8,7 +8,7 @@ read -p "Enter system to deploy >> " choice
 
 if [[ "$choice" == "1" ]]; then
     echo "Deploying Omarchy..."
-    # ...
+    $HOME/dotfiles/platforms/omarchy/deploy_omarchy.sh
 elif [[ "$choice" == "2" ]]; then
     echo "Deploying Fedora-Sway..."
     # ...
