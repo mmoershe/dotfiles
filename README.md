@@ -1,9 +1,9 @@
 # dotfiles
 
-## Omarchy
+## Omarchy Quickstart
 
 ```bash
-stow --dir=$HOME/dotfiles/platforms/omarchy --target=$HOME bash
+sudo pacman -Syu --noconfirm --needed && git clone https://github.com/mmoershe/dotfiles ~/dotfiles && ~/dotfiles/platforms/omarchy/deploy_omarchy.sh
 ```
 
 ## LEGACY
