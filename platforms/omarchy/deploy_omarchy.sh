@@ -11,6 +11,7 @@ stow --dir="$DOTFILES_DIR" --target="$TARGET_DIR" bash
 rm  "$TARGET_DIR/.config/hypr/monitors.conf"
 rm  "$TARGET_DIR/.config/hypr/input.conf"
 rm  "$TARGET_DIR/.config/hypr/bindings.conf"
+rm  "$TARGET_DIR/.config/hypr/autostart.conf"
 stow --dir="$DOTFILES_DIR" --target="$TARGET_DIR" hypr
 
 hyprctl reload
