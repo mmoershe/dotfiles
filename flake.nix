@@ -9,10 +9,11 @@
     let 
       lib = nixpkgs.lib;
     in {
-    nixosConfiguration = {
+    nixosConfigurations = {
       rellana = lib.nixosSystem {
         system = "x86_64-linux";
 	modules = [ ./configuration.nix ];
+      };
     };
-  };
+    };
 }
