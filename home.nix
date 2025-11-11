@@ -22,4 +22,10 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  # DOTFILES
+
+  xdg.configFile."hypr/hyprland.conf".source = ./hyprland.conf;
+
+  programs.bash.enable = true;
 }
