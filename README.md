@@ -24,3 +24,7 @@ Updates the System!
 ```bash
 home-manager switch --flake .#configuration
 ```
+
+## Links
+
+- [MyNixOS.com](https://mynixos.com/)
