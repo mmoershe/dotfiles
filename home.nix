@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./modules/hypr/hypr.nix
+  ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "rellana";
@@ -24,9 +27,6 @@
   programs.home-manager.enable = true;
 
   # DOTFILES
-
-  home.file.".config/hypr/hyprland.conf".source = ./modules/hypr/hyprland.conf;
-  home.file.".config/hypr/monitor.conf".source = ./modules/hypr/monitor.conf;
 
   programs.bash.enable = true;
 }
