@@ -25,7 +25,7 @@
 
   # DOTFILES
 
-  xdg.configFile."hypr".source = ./hypr;
+  home.file.".config/hypr".source = ./hypr;
 
   programs.bash.enable = true;
 }
