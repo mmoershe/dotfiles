@@ -104,6 +104,11 @@
   environment.systemPackages = with pkgs; [
     gcc
     gnumake
+    nodejs
+    luarocks
+    lua51
+    unzip
+    mermaid-cli
     vim
     wget
     neovim
