@@ -25,8 +25,8 @@
 
   # DOTFILES
 
-  home.file.".config/hypr/hyprland.conf".source = ./hypr/hyprland.conf;
-  home.file.".config/hypr/monitor.conf".source = ./hypr/monitor.conf;
+  home.file.".config/hypr/hyprland.conf".source = ./modules/hypr/hyprland.conf;
+  home.file.".config/hypr/monitor.conf".source = ./modules/hypr/monitor.conf;
 
   programs.bash.enable = true;
 }
