@@ -106,7 +106,7 @@
     gnumake
     nodejs
     luarocks
-    lua51
+    lua5_1
     unzip
     mermaid-cli
     vim
