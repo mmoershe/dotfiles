@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let
-  nvimConfig = builtins.fetchGit {
+  nvimConfig = pkgs.fetchgit {
     url = "https://github.com/mmoershe/config.nvim.git";
   };
 in
