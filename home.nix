@@ -5,6 +5,7 @@
     ./modules/hypr/hypr.nix
     ./modules/nvim/nvim.nix
     ./modules/kitty/kitty.nix
+    ./modules/waybar/waybar.nix
   ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.

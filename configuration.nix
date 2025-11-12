@@ -105,7 +105,6 @@
     vim
     wget
     neovim
-    waybar
     thunderbird
     wofi
     fastfetch
