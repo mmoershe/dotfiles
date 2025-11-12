@@ -18,7 +18,7 @@
       rellana = lib.nixosSystem {
 	inherit system;
 	modules = [
-	  ./configuration.nix
+	  ./hosts/rellana/configuration.nix
 	];
       };
     };

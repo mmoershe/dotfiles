@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ./modules/hypr/hypr.nix
-    ./modules/nvim/nvim.nix
-    ./modules/kitty/kitty.nix
-    ./modules/waybar/waybar.nix
+    ./home/modules/hypr/hypr.nix
+    ./home/modules/nvim/nvim.nix
+    ./home/modules/kitty/kitty.nix
+    ./home/modules/waybar/waybar.nix
   ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
