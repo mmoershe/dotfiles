@@ -3,6 +3,7 @@
 {
     home.packages = with pkgs; [
         neovim
+        tree-sitter
         gcc
         gnumake
         nodejs
