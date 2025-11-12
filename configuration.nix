@@ -105,7 +105,6 @@
     vim
     wget
     neovim
-    kitty
     waybar
     thunderbird
     wofi
