@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       # <home-manager/nixos>
+      ./../../system/common.nix
     ];
 
   # Bootloader.
@@ -96,26 +97,13 @@
   # Install firefox.
   programs.firefox.enable = true;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim
-    wget
     neovim
     thunderbird
     wofi
-    fastfetch
+    chromium
     discord
-    git
-    gh
-    lazygit
     vscodium
-    python3
-    bat
-    fzf
   ];
 
   # home-manager.users.rellana = { pkgs, ... }: {
@@ -147,8 +135,4 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "25.05"; # Did you read the comment?
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
 }
