@@ -20,8 +20,9 @@
   # changes in each release.
   home.stateVersion = "25.05";
 
-  home.packages = [
-    pkgs.hello
+  home.packages = with pkgs; [
+    hello
+    nerd-fonts.jetbrains-mono
   ];
 
   # Let Home Manager install and manage itself.
