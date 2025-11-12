@@ -12,6 +12,8 @@
         fd
         unzip
         mermaid-cli
+        imagemagick
+        trashy
     ];
 }
 

@@ -115,6 +115,7 @@
     gh
     lazygit
     vscodium
+    python3
     bat
     fzf
   ];
