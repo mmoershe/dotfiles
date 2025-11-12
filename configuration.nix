@@ -102,15 +102,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    gcc
-    gnumake
-    nodejs
-    luarocks
-    lua5_1
-    ripgrep
-    fd
-    unzip
-    mermaid-cli
     vim
     wget
     neovim
