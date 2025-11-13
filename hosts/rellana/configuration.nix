@@ -46,7 +46,14 @@
   services.xserver.enable = true;
 
   # Display Manager
-  services.displayManager.ly.enable = true;
+  services.displayManager.ly = {
+    enable = true;
+    package = pkgs.ly;
+    settings = {
+      hide_borders = false;
+      animation = "matrix";
+    };
+  };
 
   # Hyprland stuff
   programs.hyprland.enable = true;
