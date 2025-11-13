@@ -12,6 +12,7 @@
         chromium
         discord
         vscodium
+        starship
         libreoffice-still
     ];
 }
