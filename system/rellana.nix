@@ -12,5 +12,6 @@
         chromium
         discord
         vscodium
+        libreoffice-still
     ];
 }
