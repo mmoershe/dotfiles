@@ -15,6 +15,8 @@
         mermaid-cli
         imagemagick
         trashy
+        cargo
+        marksman
     ];
 }
 
