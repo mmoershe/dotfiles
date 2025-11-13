@@ -1,12 +1,14 @@
 { config, pkgs, lib, ... }:
 
 let
-  hyprConfigDir = ".config/hypr";
+    hyprConfigDir = ".config/hypr";
 in
 {
-  home.file."${hyprConfigDir}/hyprland.conf".source = ./hyprland.conf;
-  home.file."${hyprConfigDir}/monitor.conf".source  = ./monitor.conf;
-  home.file."${hyprConfigDir}/bindings.conf".source  = ./bindings.conf;
-  home.file."${hyprConfigDir}/autostart.conf".source  = ./autostart.conf;
+    home.file = {
+        "${hyprConfigDir}/hyprland.conf".source = ./hyprland.conf;
+        "${hyprConfigDir}/monitor.conf".source  = ./monitor.conf;
+        "${hyprConfigDir}/bindings.conf".source  = ./bindings.conf;
+        "${hyprConfigDir}/autostart.conf".source  = ./autostart.conf;
+    };
 }
 
