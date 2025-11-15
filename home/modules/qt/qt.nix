@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-    home.packages = [
-        pkgs.qt5.qt5ct
+    home.packages = with pkgs; [
+        libsForQt5.qt5ct
     ];
 
     home.sessionVariables = {
