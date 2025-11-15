@@ -2,6 +2,17 @@
 
 ## Useful Commands
 
+### Rellana Deploy
+
+```bash
+sudo nixos-rebuild switch --flake github:mmoershe/dotfiles/nixos-restructure#rellana --impure
+```
+
+```bash
+nix run github:nix-community/home-manager -- switch --flake github:mmoershe/dotfiles/nixos-restructure#rellana
+```
+
+
 ### Update Flake
 
 ```bash
