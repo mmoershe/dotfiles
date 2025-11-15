@@ -10,7 +10,10 @@
   - [ ] Animations
   - [ ] Application Launcher
   - [ ] Waybar Integrations
+  - [ ] Idle
+  - [ ] Lock
 - [ ] Notification Daemon
+- [ ] Another DE? (Gnome or KDE?)
 - [ ] Lothric Configurations
 - [ ] Thiollier Configurations
 
