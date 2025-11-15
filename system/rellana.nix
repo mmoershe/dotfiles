@@ -17,5 +17,6 @@
         vscodium
         starship
         libreoffice-still
+        bitwarden-desktop
     ];
 }
