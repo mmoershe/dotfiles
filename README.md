@@ -1,20 +1,14 @@
 # NixOS Dotfiles
 
 - [Bootstrap](docs/bootstrap/)
+- [Hosts/Configurations](hosts/)
+
+## TODO
+
+- [ ] Wallpaper (Hyprpaper?)
+- [ ] Animations
 
 ## Useful Commands
-
-### Rellana Deploy
-
-_No Desktop_
-
-```bash
-sudo nixos-rebuild switch --flake github:mmoershe/dotfiles/nixos-restructure#rellana --impure
-```
-
-```bash
-nix run github:nix-community/home-manager -- switch --flake github:mmoershe/dotfiles/nixos-restructure#rellana
-```
 
 ### Update Flake
 
