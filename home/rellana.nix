@@ -8,6 +8,7 @@
         ./modules/kitty/kitty.nix
         ./modules/waybar/waybar.nix
         ./modules/gtk/gtk.nix
+        ./modules/qt/qt.nix
     ];
 
     home.username = "rellana";
