@@ -1,6 +1,6 @@
 # NixOS Dotfiles
 
-- [Bootstrap](docs/bootstrap/index.md)
+- [Bootstrap](docs/bootstrap/)
 
 ## Useful Commands
 
