@@ -4,6 +4,8 @@
 
 ### Rellana Deploy
 
+*No Desktop*
+
 ```bash
 sudo nixos-rebuild switch --flake github:mmoershe/dotfiles/nixos-restructure#rellana --impure
 ```
