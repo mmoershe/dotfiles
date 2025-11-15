@@ -16,6 +16,7 @@
 - [ ] Another DE? (Gnome or KDE?)
 - [ ] Lothric Configurations
 - [ ] Thiollier Configurations
+- [ ] Improve Jekyll Theme
 
 ## Useful Commands
 
