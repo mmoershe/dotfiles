@@ -5,6 +5,8 @@
     # Install firefox.
     programs.firefox.enable = true;
 
+    programs.thunar.enable = true;
+
     hardware.bluetooth.enable = true;
     services.blueman.enable = true;
 
@@ -14,9 +16,11 @@
         wofi
         chromium
         discord
+        whatsie
         vscodium
         starship
         libreoffice-still
         bitwarden-desktop
+        nautilus
     ];
 }
