@@ -32,7 +32,8 @@
         };
     };
 
-  # Environment Variable for Electron-Apps, Flatpaks, etc.
+    # Environment Variable for Electron-Apps, Flatpaks, etc.
     home.sessionVariables = {
         GTK_THEME = "Dracula";
     };
+}
