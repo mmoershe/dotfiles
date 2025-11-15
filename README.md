@@ -5,8 +5,11 @@
 
 ## TODO
 
-- [ ] Wallpaper (Hyprpaper?)
-- [ ] Animations
+- [ ] Hyprland Setup
+  - [ ] Wallpaper (Hyprpaper?)
+  - [ ] Animations
+  - [ ] Application Launcher
+  - [ ] Waybar Integrations
 
 ## Useful Commands
 
