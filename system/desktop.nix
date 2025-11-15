@@ -21,5 +21,6 @@
         libreoffice-still
         bitwarden-desktop
         nautilus
+        spotify
     ];
 }
