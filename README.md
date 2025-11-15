@@ -1,10 +1,12 @@
 # NixOS Dotfiles
 
+- [Bootstrap](docs/bootstrap/index.md)
+
 ## Useful Commands
 
 ### Rellana Deploy
 
-*No Desktop*
+_No Desktop_
 
 ```bash
 sudo nixos-rebuild switch --flake github:mmoershe/dotfiles/nixos-restructure#rellana --impure
@@ -13,7 +15,6 @@ sudo nixos-rebuild switch --flake github:mmoershe/dotfiles/nixos-restructure#rel
 ```bash
 nix run github:nix-community/home-manager -- switch --flake github:mmoershe/dotfiles/nixos-restructure#rellana
 ```
-
 
 ### Update Flake
 
@@ -29,7 +30,7 @@ Updates flake.lock file, _not_ the system!
 sudo nixos-rebuild switch --flake .#configuration
 ```
 
-uses the current hostname as default configuration. 
+uses the current hostname as default configuration.
 Updates the System!
 
 ###
