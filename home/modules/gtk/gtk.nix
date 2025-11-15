@@ -10,8 +10,8 @@
         };
 
         iconTheme = {
-            name = "Dracula";  # /"Papirus-Dark"
-            package = pkgs.dracula-theme;
+            name = "Papirus-Dark";  # /"Papirus-Dark"
+            package = pkgs.papirus-icon-theme;
         };
 
         # Force Dark Mode for GTK-Apps (Firefox, Nautilus, etc.)
