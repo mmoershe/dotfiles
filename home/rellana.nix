@@ -7,6 +7,7 @@
         ./modules/nvim/nvim.nix
         ./modules/kitty/kitty.nix
         ./modules/waybar/waybar.nix
+        ./modules/gtk/gtk.nix
     ];
 
     home.username = "rellana";
