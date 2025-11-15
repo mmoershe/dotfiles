@@ -10,6 +10,9 @@
   - [ ] Animations
   - [ ] Application Launcher
   - [ ] Waybar Integrations
+- [ ] Notification Daemon
+- [ ] Lothric Configurations
+- [ ] Thiollier Configurations
 
 ## Useful Commands
 
