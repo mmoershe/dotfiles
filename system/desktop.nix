@@ -2,12 +2,11 @@
 
 {
 
-    # Install firefox.
     programs.firefox.enable = true;
-
     programs.thunar.enable = true;
 
     hardware.bluetooth.enable = true;
+
     services.blueman.enable = true;
 
     environment.systemPackages = with pkgs; [
