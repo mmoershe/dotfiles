@@ -22,5 +22,7 @@
         bitwarden-desktop
         nautilus
         spotify
+        pavucontrol
+        brightnessctl
     ];
 }
