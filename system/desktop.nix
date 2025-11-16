@@ -12,7 +12,6 @@
     environment.systemPackages = with pkgs; [
         neovim
         thunderbird
-        wofi
         chromium
         discord
         whatsie
