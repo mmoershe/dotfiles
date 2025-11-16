@@ -12,7 +12,7 @@
   - [ ] Waybar Integrations
   - [ ] Idle
   - [ ] Lock
-- [ ] Notification Daemon
+- [x] Notification Daemon
 - [ ] Another DE? (Gnome or KDE?)
 - [ ] Lothric Configurations
 - [ ] Thiollier Configurations
