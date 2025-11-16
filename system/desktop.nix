@@ -24,5 +24,6 @@
         spotify
         pavucontrol
         brightnessctl
+        mongodb-compass
     ];
 }
