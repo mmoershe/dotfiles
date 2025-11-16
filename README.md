@@ -6,7 +6,7 @@
 ## TODO
 
 - [ ] Hyprland Setup
-  - [ ] Wallpaper (Hyprpaper?)
+  - [x] Wallpaper (Hyprpaper?)
   - [ ] Animations
   - [ ] Application Launcher
   - [ ] Waybar Integrations
