@@ -10,6 +10,7 @@
         ./modules/gtk/gtk.nix
         ./modules/qt/qt.nix
         ./modules/mako/mako.nix
+        ./modules/wofi/wofi.nix
     ];
 
     home.username = "rellana";
