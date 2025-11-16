@@ -1,0 +1,23 @@
+# Global styling
+font=JetBrainsMono Nerd Font 11
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+border-size=2
+border-radius=8
+padding=12
+default-timeout=5000
+
+# Message body formatting
+format=<b>%s</b>\n%b   # %s = summary (title), %b = body (message)
+
+# Urgency levels
+[urgency=low]
+border-color=#a6e3a1
+
+[urgency=normal]
+border-color=#89b4fa
+
+[urgency=critical]
+border-color=#f38ba8
+background-color=#f38ba811
