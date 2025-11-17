@@ -69,6 +69,14 @@
     boot.loader.grub.enable = true;
     boot.loader.grub.efiSupport = true;
     boot.loader.grub.device = "nodev";
+    boot.loader.grub = {
+        minegrub-theme = {
+            enable = true;
+            splash = "100% Flakes!";
+            background = "background_options/1.8  - [Classic Minecraft].png";
+            boot-options-count = 4;
+        };
+    };
     boot.loader.efi.canTouchEfiVariables = true;
     nixpkgs.config.allowUnfree = true;
 
