@@ -25,4 +25,26 @@
         brightnessctl
         mongodb-compass
     ];
+
+    # Display Manager
+    services.displayManager.ly = {
+        enable = true;
+        package = pkgs.ly;
+        settings = {
+        hide_borders = false;
+        animation = "matrix";
+        };
+    };
+
+    # (Dis/En)able the X11 windowing system.
+    services.xserver.enable = true;
+
+    # Hyprland stuff
+    programs.hyprland.enable = true;
+
+    # Configure keymap in X11
+    services.xserver.xkb = {
+        layout = "de";
+        variant = "";
+    };
 }
