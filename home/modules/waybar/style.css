@@ -115,7 +115,7 @@
 
 #workspaces button.urgent {
   border-color: #c9545d;
-  color: #c9545d;
+  color: @red;
 }
 
 #mode {
