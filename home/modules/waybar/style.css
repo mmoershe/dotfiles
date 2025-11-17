@@ -6,6 +6,19 @@
  *
  * =========================================================================== */
 
+@define-color background-darker rgba(30, 31, 41, 230);
+@define-color background #282a36;
+@define-color selection #44475a;
+@define-color foreground #f8f8f2;
+@define-color comment #6272a4;
+@define-color cyan #8be9fd;
+@define-color green #50fa7b;
+@define-color orange #ffb86c;
+@define-color pink #ff79c6;
+@define-color purple #bd93f9;
+@define-color red #ff5555;
+@define-color yellow #f1fa8c;
+
 /* -----------------------------------------------------------------------------
  * Keyframes
  * -------------------------------------------------------------------------- */
@@ -52,7 +65,7 @@
 #waybar {
   background: transparent;
   color: #e3e3ea;
-  background-color: @base1;
+  background-color: @background-darker;
   font-family: "JetBrainsMono Nerd Font";
   font-size: 13px;
 }
@@ -80,6 +93,7 @@
 #custom-launcher {
   margin-left: 15px;
   margin-right: 10px;
+  color: @cyan;
 }
 
 #workspaces {
@@ -95,7 +109,8 @@
 }
 
 #workspaces button.active {
-  border: 1px solid #d8dee9;
+  /* border: 1px solid #d8dee9; */
+  color: @purple;
 }
 
 #workspaces button.urgent {
@@ -113,6 +128,7 @@
 
 #window {
   font-weight: bold;
+  color: @foreground;
 }
 
 #network.disconnected {
