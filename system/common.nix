@@ -3,15 +3,18 @@
 {
     environment.systemPackages = with pkgs; [
         file
-        vim
+        duf
+        htop
+        btop
         wget
-        fastfetch
         git
         gh
-        lazygit
         bat
         fzf
+        vim
+        fastfetch
         python3
+        lazygit
     ];
 
     # Enable networking
