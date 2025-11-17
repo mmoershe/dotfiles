@@ -20,7 +20,6 @@
     ],
 
     "modules-right": [
-        "custom/keyboard-layout",
         "idle_inhibitor",
         "cpu",
         "memory",
@@ -76,16 +75,6 @@
         "format-disconnected": " Disconnected",
         "on-click": "kitty -T waybar_nmtui nmtui",
         "interval": 2
-    },
-
-    "custom/keyboard-layout": {
-      	"exec": "i=$(swaymsg -t get_inputs); echo \"\"; echo \"$i\" | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-        "format": "",
-        // Interval set only as a fallback; use signal to update the module more immediately
-        "interval": 30,
-        // See example config for sending signal to Waybar in ~/.config/sway/config.d/input
-        "signal": 1,
-        "on-click": "~/.config/waybar/scripts/keyhint.sh"
     },
 
     "idle_inhibitor": {
