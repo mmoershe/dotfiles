@@ -24,6 +24,7 @@
         pavucontrol
         brightnessctl
         mongodb-compass
+        feh
     ];
 
     # Display Manager
