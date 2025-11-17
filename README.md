@@ -17,6 +17,7 @@
 - [ ] Lothric Configurations
 - [ ] Thiollier Configurations
 - [ ] Improve Jekyll Theme
+- [ ] Grub Theme
 
 ## Useful Commands
 
