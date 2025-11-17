@@ -94,7 +94,7 @@
   margin-left: 2px;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
   border: 1px solid #d8dee9;
 }
 

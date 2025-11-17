@@ -10,8 +10,7 @@
 
     "modules-left": [
         "custom/launcher",
-        // "hyprland/workspaces",
-        "sway/mode",
+        "hyprland/workspaces",
         "hyprland/window"
     ],
 
@@ -37,7 +36,7 @@
         "tooltip": false
     },
 
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "format": "{icon}",
@@ -53,17 +52,6 @@
             "9": "󰭹",
             "0": "0"
         }
-    },
-
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>",
-        "tooltip": false
-    },
-
-    "sway/window": {
-        "format": "{}",
-        //"all-outputs": true, // Active window shows only on active display when commented
-        "max-length": 120
     },
 
     "network": {
