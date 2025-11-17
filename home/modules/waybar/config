@@ -10,9 +10,9 @@
 
     "modules-left": [
         "custom/launcher",
-        "sway/workspaces",
+        // "hyprland/workspaces",
         "sway/mode",
-        "sway/window"
+        "hyprland/window"
     ],
 
     "modules-center": [
