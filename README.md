@@ -7,6 +7,7 @@
 
 - [ ] Hyprland Setup
   - [x] Wallpaper (Hyprpaper?)
+  - [ ] Changing / Animated Wallpaper (awww / swww)
   - [ ] Animations
   - [ ] Application Launcher
   - [ ] Waybar Integrations
@@ -17,7 +18,7 @@
 - [ ] Lothric Configurations
 - [ ] Thiollier Configurations
 - [ ] Improve Jekyll Theme
-- [ ] Grub Theme
+- [x] Grub Theme
 
 ## Useful Commands
 
