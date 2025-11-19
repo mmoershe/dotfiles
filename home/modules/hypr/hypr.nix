@@ -7,6 +7,7 @@ in
     home.packages = with pkgs; [
         hyprpaper
         hypridle
+        hyprlock
     ];
 
     home.file = {
@@ -16,6 +17,7 @@ in
         "${hyprConfigDir}/autostart.conf".source  = ./autostart.conf;
         "${hyprConfigDir}/looknfeel.conf".source  = ./looknfeel.conf;
         "${hyprConfigDir}/hypridle.conf".source = ./hypridle.conf;
+        "${hyprConfigDir}/hyprlock.conf".source = ./hyprlock.conf;
         "${hyprConfigDir}/hyprpaper.conf".source = ./hyprpaper.conf;
         "Pictures/wallpapers/wallpaper_1.jpeg".source  = ./wallpaper_1.jpeg;
     };
