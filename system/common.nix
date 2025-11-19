@@ -15,6 +15,7 @@
         fastfetch
         python3
         lazygit
+        openvpn
     ];
 
     # Enable networking
