@@ -1,9 +1,8 @@
-{ config, pkgs, lib, osConfig, ... }:
+{ config, pkgs, lib, hostname, ... }:
 
 let
     hyprConfigDir = ".config/hypr";
 
-    hostname = osConfig.networking.hostName;
     monitorFile =
         if hostname == "rellana" then ./monitor-rellana.conf
         else if hostname == "lothric" then ./monitor-lothric.conf
@@ -19,7 +18,6 @@ in
     home.file = {
         "${hyprConfigDir}/hyprland.conf".source = ./hyprland.conf;
         "${hyprConfigDir}/monitor.conf".source  = monitorFile;
-        "${hyprConfigDir}/test.txt".text = hostname;
         "${hyprConfigDir}/bindings.conf".source  = ./bindings.conf;
         "${hyprConfigDir}/autostart.conf".source  = ./autostart.conf;
         "${hyprConfigDir}/looknfeel.conf".source  = ./looknfeel.conf;

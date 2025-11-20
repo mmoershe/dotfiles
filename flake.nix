@@ -34,11 +34,23 @@
         homeConfigurations = {
             rellana = home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
-                modules = [ ./home/rellana.nix ];
+                modules = [ 
+                    ./home/rellana.nix { 
+                        _module.args = {
+                            hostname = "rellana";
+                        };
+                    }
+                ];
             };
             lothric = home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
-                modules = [ ./home/lothric.nix ];
+                modules = [ 
+                    ./home/lothric.nix {
+                        _module.args = {
+                            hostname = "lothric";
+                    };
+                }
+            ];
             };
         };
     };
