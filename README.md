@@ -13,7 +13,7 @@
   - [ ] Waybar Integrations
   - [ ] Cursor?
   - [ ] Idle (Animation?)
-  - [ ] Lock
+  - [x] Lock
 - [x] Notification Daemon
 - [ ] Another DE? (Gnome or KDE?)
 - [x] Lothric Configurations
