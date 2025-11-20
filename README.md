@@ -11,7 +11,8 @@
   - [ ] Animations
   - [ ] Application Launcher
   - [ ] Waybar Integrations
-  - [ ] Idle
+  - [ ] Cursor?
+  - [ ] Idle (Animation?)
   - [ ] Lock
 - [x] Notification Daemon
 - [ ] Another DE? (Gnome or KDE?)
