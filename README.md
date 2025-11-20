@@ -15,7 +15,7 @@
   - [ ] Lock
 - [x] Notification Daemon
 - [ ] Another DE? (Gnome or KDE?)
-- [ ] Lothric Configurations
+- [x] Lothric Configurations
 - [ ] Thiollier Configurations
 - [ ] Improve Jekyll Theme
 - [x] Grub Theme
