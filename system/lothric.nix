@@ -11,7 +11,7 @@
     # This defines a user account
     # Make sure to set a password before this
     # (GUI installer or 'passwd')
-    users.users.rellana = {
+    users.users.lothric = {
         isNormalUser = true;
         description = "Lothric";
         extraGroups = [ "networkmanager" "wheel" ];
