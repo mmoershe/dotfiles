@@ -13,6 +13,8 @@ exit_screensaver() {
     exit 0
 }
 
+trap exit_screensaver SIGINT SIGTERM SIGHUP SIGQUIT
+
 while true; do
     tte -i ~/.config/branding.txt --frame-rate 100 --anchor-canvas c --anchor-text c --canvas-width 0 randomsequence
     while pgrep -x tte >/dev/null; do
