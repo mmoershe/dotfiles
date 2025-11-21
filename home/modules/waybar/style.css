@@ -92,12 +92,20 @@
 
 #custom-launcher {
   margin-left: 15px;
-  margin-right: 10px;
+  margin-right: 5px;
   color: @cyan;
 }
 
 #workspaces {
   font-size: 13px;
+  background-color: @selection;
+  border-radius: 10px;
+  border-color: @red;
+  border: 1px solid @comment;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 
 #workspaces button {
