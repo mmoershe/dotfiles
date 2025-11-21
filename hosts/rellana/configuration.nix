@@ -6,5 +6,6 @@
         # <home-manager/nixos>
         ./../../system/common.nix
         ./../../system/rellana.nix
+        ./../../system/scripts.nix
     ];
 }
