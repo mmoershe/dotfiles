@@ -9,7 +9,7 @@
   - [x] Wallpaper (Hyprpaper?)
   - [ ] Changing / Animated Wallpaper (awww / swww)
   - [ ] Animations
-  - [ ] Application Launcher
+  - [x] Application Launcher
   - [ ] Waybar Integrations
   - [ ] Cursor?
   - [ ] Idle (Animation?)
