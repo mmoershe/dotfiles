@@ -4,6 +4,7 @@
     environment.systemPackages = with pkgs; [
         bash
         file
+        jq
         duf
         htop
         btop

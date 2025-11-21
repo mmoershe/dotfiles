@@ -6,6 +6,7 @@
         ./modules/hypr/hypr.nix
         ./modules/nvim/nvim.nix
         ./modules/kitty/kitty.nix
+        ./modules/alacritty/alacritty.nix
         ./modules/waybar/waybar.nix
         ./modules/gtk/gtk.nix
         ./modules/qt/qt.nix
