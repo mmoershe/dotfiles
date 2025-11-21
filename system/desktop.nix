@@ -25,6 +25,9 @@
         brightnessctl
         mongodb-compass
         feh
+        ytdownloader
+        clipgrab
+        localsend
     ];
 
     # Display Manager
