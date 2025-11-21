@@ -7,6 +7,7 @@ let
         (writeShellScriptBin "show-branding" (builtins.readFile ./scripts/show-branding.sh))
         (writeShellScriptBin "screensaver" (builtins.readFile ./scripts/screensaver.sh))
         (writeShellScriptBin "launch-screensaver" (builtins.readFile ./scripts/launch-screensaver.sh))
+        (writeShellScriptBin "lock-screen" (builtins.readFile ./scripts/lock-screen.sh))
     ];
 
 in
