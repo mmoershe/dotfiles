@@ -20,7 +20,8 @@
 - [ ] Thiollier Configurations
 - [ ] Improve Jekyll Theme
 - [x] Grub Theme
-- [ ] Scripts/Binaries (writeShellScriptBin?)
+- [x] Scripts/Binaries (writeShellScriptBin?)
+- [ ] Add more scripts (Lock?)
 
 ## Useful Commands
 
