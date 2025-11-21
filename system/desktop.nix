@@ -28,6 +28,8 @@
         ytdownloader
         clipgrab
         localsend
+        terminaltexteffects
+        alacritty
     ];
 
     # Display Manager
