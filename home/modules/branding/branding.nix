@@ -8,7 +8,7 @@ let
 in
 {
     home.file = {
-        ".config/branding".source = brandingFile;
+        ".config/branding.txt".source = brandingFile;
     };
 }
 
