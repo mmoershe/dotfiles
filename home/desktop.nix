@@ -11,6 +11,7 @@
         ./modules/qt/qt.nix
         ./modules/mako/mako.nix
         ./modules/wofi/wofi.nix
+        ./modules/branding/branding.nix
     ];
 
     home.packages = with pkgs; [
