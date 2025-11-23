@@ -5,6 +5,8 @@
         ./desktop.nix
     ];
 
+    programs.steam.enable = true;
+
     networking.hostName = "lothric";
 
 
