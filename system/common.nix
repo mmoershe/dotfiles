@@ -15,6 +15,7 @@
         fzf
         vim
         fastfetch
+        onefetch
         python3
         lazygit
         openvpn
