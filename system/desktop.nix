@@ -29,6 +29,7 @@
         clipgrab
         localsend
         terminaltexteffects
+        teams-for-linux
     ];
 
     # Display Manager
