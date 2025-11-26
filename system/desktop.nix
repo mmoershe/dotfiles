@@ -10,6 +10,7 @@
     services.blueman.enable = true;
 
     environment.systemPackages = with pkgs; [
+        rose-pine-hyprcursor
         neovim
         thunderbird
         chromium

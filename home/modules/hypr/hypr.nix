@@ -14,7 +14,6 @@ in
         hypridle
         hyprlock
         hyprcursor
-        rose-pine-hyprcursor
     ];
 
     home.file = {
