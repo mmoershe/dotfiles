@@ -34,11 +34,13 @@
 - [ ] Hyprland Setup
   - [x] Wallpaper (Hyprpaper?)
   - [ ] Changing / Animated Wallpaper (awww / swww)
-  - [ ] Animations
+  - [ ] Adjust Animations
   - [x] Application Launcher
   - [ ] Waybar Integrations
-  - [ ] Cursor?
-  - [ ] Idle (Animation?)
+    - [ ] Idle in Waybar?
+  - [ ] Cursor (GTK apps?)
+  - [x] Idle
+  - [ ] Proper Screensaver?
   - [x] Lock
 - [x] Notification Daemon
 - [ ] Another DE? (Gnome or KDE?)
