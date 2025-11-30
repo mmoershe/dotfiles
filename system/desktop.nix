@@ -44,7 +44,8 @@
     };
 
     # (Dis/En)able the X11 windowing system.
-    services.xserver.enable = false;
+    services.xserver.enable = true;
+    services.xserver.desktopManager.gnome.enable = true;
 
     # Hyprland stuff
     programs.hyprland.enable = true;
