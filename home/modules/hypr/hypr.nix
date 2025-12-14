@@ -3,10 +3,10 @@
 let
     hyprConfigDir = ".config/hypr";
 
-    monitorFile =
-        if hostname == "rellana" then ./monitor-rellana.conf
-        else if hostname == "lothric" then ./monitor-lothric.conf
-        else ./monitor.conf;
+    overrideFile =
+        if hostname == "rellana" then ./override-rellana.conf
+        else if hostname == "lothric" then ./override-lothric.conf
+        else ./override.conf;
 in
 {
     home.packages = with pkgs; [
@@ -14,11 +14,12 @@ in
         hypridle
         hyprlock
         hyprcursor
+        hyprshot
     ];
 
     home.file = {
         "${hyprConfigDir}/hyprland.conf".source = ./hyprland.conf;
-        "${hyprConfigDir}/monitor.conf".source  = monitorFile;
+        "${hyprConfigDir}/override.conf".source  = overrideFile;
         "${hyprConfigDir}/bindings.conf".source  = ./bindings.conf;
         "${hyprConfigDir}/autostart.conf".source  = ./autostart.conf;
         "${hyprConfigDir}/looknfeel.conf".source  = ./looknfeel.conf;
