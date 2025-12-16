@@ -13,6 +13,7 @@
         ./modules/mako/mako.nix
         ./modules/wofi/wofi.nix
         ./modules/branding/branding.nix
+        ./modules/vscodium/codium.nix
     ];
 
     home.packages = with pkgs; [
