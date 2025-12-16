@@ -16,7 +16,6 @@
         chromium
         discord
         whatsie
-        vscodium
         starship
         libreoffice-still
         bitwarden-desktop
