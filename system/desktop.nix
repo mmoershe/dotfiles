@@ -15,7 +15,7 @@
         thunderbird
         chromium
         discord
-        whatsie
+        whatsapp-electron
         starship
         libreoffice-still
         bitwarden-desktop
@@ -26,7 +26,6 @@
         mongodb-compass
         feh
         ytdownloader
-        clipgrab
         localsend
         terminaltexteffects
         teams-for-linux
