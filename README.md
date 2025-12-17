@@ -55,3 +55,4 @@
 
 - [MyNixOS.com](https://mynixos.com/)
 - [Nix Packages Search](https://search.nixos.org/packages)
+- [Nix Channel Status](https://status.nixos.org/)
