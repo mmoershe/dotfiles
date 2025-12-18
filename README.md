@@ -36,8 +36,8 @@
   - [ ] Changing / Animated Wallpaper (awww / swww)
   - [ ] Adjust Animations
   - [x] Application Launcher
-  - [ ] Waybar Integrations
-    - [ ] Idle in Waybar?
+  - [x] Waybar Integrations
+    - [x] Idle in Waybar?
   - [ ] Cursor (GTK apps?)
   - [x] Idle
   - [ ] Proper Screensaver?
