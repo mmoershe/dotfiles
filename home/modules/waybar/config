@@ -87,7 +87,7 @@
     
     "memory": {
         "interval": 5,
-        "format": "{:>3}%",
+        "format": " {used:.1f}GiB",
         "on-click": "footclient -T waybar_htop -e htop", 
         "states": {
             "warning": 70,
