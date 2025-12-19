@@ -27,8 +27,8 @@
     # dconf for GNOME-Apps (z.B. Nautilus, Evince) ===
     dconf.settings = {
         "org/gnome/desktop/interface" = {
-        color-scheme = "prefer-dark";
-        gtk-theme = "Dracula";
+            color-scheme = "prefer-dark";
+            gtk-theme = "Dracula";
         };
     };
 
