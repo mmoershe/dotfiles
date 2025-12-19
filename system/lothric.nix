@@ -5,6 +5,10 @@
         ./desktop.nix
     ];
 
+    environment.systemPackages = with pkgs; [
+        lutris
+    ];
+
     programs.steam.enable = true;
 
     networking.hostName = "lothric";
