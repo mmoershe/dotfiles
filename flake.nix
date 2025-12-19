@@ -30,6 +30,13 @@
                     minegrub-theme.nixosModules.default
                 ];
             };
+            thiollier = lib.nixosSystem {
+                inherit system;
+                modules = [
+                    ./hosts/thiollier/configuration.nix
+                    minegrub-theme.nixosModules.default
+                ];
+            };
         };
         homeConfigurations = {
             rellana = home-manager.lib.homeManagerConfiguration {
@@ -48,9 +55,19 @@
                     ./home/lothric.nix {
                         _module.args = {
                             hostname = "lothric";
-                    };
-                }
-            ];
+                        };
+                    }
+                ];
+            };
+            thiollier = home-manager.lib.homeManagerConfiguration {
+                inherit pkgs;
+                modules = [ 
+                    ./home/thiollier.nix {
+                        _module.args = {
+                            hostname = "thiollier";
+                        };
+                    }
+                ];
             };
         };
     };
