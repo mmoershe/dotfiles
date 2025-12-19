@@ -3,6 +3,7 @@
 {
     home.packages = with pkgs; [
         rose-pine-cursor
+        catppuccin-cursors.mochaMauve
     ];
 
     dconf.settings = {
@@ -13,7 +14,7 @@
             clock-show-weekday = false;
             color-scheme = "prefer-dark";
             gtk-theme = "Dracula";
-            cursor-theme = "BreezeX-RosePine-Linux";
+            cursor-theme = "catppuccin-mocha-mauve-cursors";
         };
     };
 }
