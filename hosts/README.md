@@ -1,9 +1,9 @@
 # Hosts
 
-| Host      | Type | Hardware               | Purpose                  | Status |
-| --------- | ---- | ---------------------- | ------------------------ | ------ |
-| Lothric   | 🖥️   |                        | Gaming/Programming       | ❌     |
-| Rellana   | 💻   | ThinkPad X1 Carbon 6th | Programming/Productivity | ✅     |
-| Thiollier | 💻   | ThinkPad T14           | Work                     | ❌     |
-| ?         | 🖥️📡 |                        |                          | ❌     |
-| ?         | 🖥️📡 | Raspberry Pi 4         |                          | ❌     |
+| Configuration / Hostname / User | Type | Hardware               | Purpose                  | Status |
+| ------------------------------- | ---- | ---------------------- | ------------------------ | ------ |
+| lothric                         | 🖥️   |                        | Games/Programming        | ✅     |
+| rellana                         | 💻   | ThinkPad X1 Carbon 6th | Programming/Productivity | ✅     |
+| thiollier                       | 💻   | ThinkPad T14           | Work                     | ❌     |
+| ?                               | 🖥️📡 |                        |                          | ❌     |
+| ?                               | 🖥️📡 | Raspberry Pi 4         |                          | ❌     |
