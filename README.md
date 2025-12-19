@@ -44,7 +44,7 @@
   - [ ] Proper Screensaver?
   - [x] Lock
 - [x] Notification Daemon
-- [ ] Another DE? (Gnome or KDE?)
+- [x] Another DE? (Gnome or KDE?)
 - [x] Lothric Configurations
 - [ ] Thiollier Configurations
 - [ ] Improve Jekyll Theme
