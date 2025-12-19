@@ -19,6 +19,7 @@
 | -------------------- | ----------------------------------------------------------- | --------------------------------------------------- |
 | Display Manager      | [Ly](https://codeberg.org/fairyglade/ly)                    | Lightweight TUI Display Manager                     |
 | Window Manager       | [Hyprland](https://hypr.land)                               | Tiling Wayland Compositor with Animations           |
+| Backup DE            | [GNOME](https://www.gnome.org/)                             | Simple Desktop Environment                          |
 | Wallpaper            | [Hyprpaper](https://github.com/hyprwm/hyprpaper)            | Blazing Fast Wayland Wallpaper Utility              |
 | Idle Daemon          | [Hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle/) | Hyprland's Idle Daemon                              |
 | Bar                  | [Wayland](https://github.com/Alexays/Waybar)                | Customizable Wayland Bar                            |
