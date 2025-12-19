@@ -53,5 +53,6 @@
     services.xserver.xkb = {
         layout = "de";
         variant = "";
+        options = "caps:escape";
     };
 }
