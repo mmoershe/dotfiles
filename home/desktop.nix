@@ -14,6 +14,7 @@
         ./modules/wofi/wofi.nix
         ./modules/branding/branding.nix
         ./modules/vscodium/codium.nix
+        ./modules/gnome/gnome.nix
     ];
 
     home.packages = with pkgs; [
