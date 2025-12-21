@@ -8,6 +8,7 @@
     environment.systemPackages = with pkgs; [
         lutris
         lmstudio
+        nvtopPackages.amd
     ];
 
     programs.steam.enable = true;
@@ -19,6 +20,10 @@
                 };
             ollama.enable = true;
     };
+
+    boot.initrd.kernelModules = [ "amdgpu" ];
+    nixpkgs.config.rocmSupport = true;
+    hardware.graphics.enable = true;
 
     networking.hostName = "lothric";
 
