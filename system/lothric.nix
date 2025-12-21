@@ -7,11 +7,18 @@
 
     environment.systemPackages = with pkgs; [
         lutris
-        open-webui
         lmstudio
     ];
 
     programs.steam.enable = true;
+
+    services = {
+            open-webui = {
+                    enable = true;
+                    host = "0.0.0.0";
+                };
+            ollama.enable = true;
+    };
 
     networking.hostName = "lothric";
 

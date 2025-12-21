@@ -30,7 +30,6 @@
         terminaltexteffects
         teams-for-linux
         opencode
-        python311
     ];
 
     # Display Manager
