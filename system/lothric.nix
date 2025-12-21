@@ -7,6 +7,8 @@
 
     environment.systemPackages = with pkgs; [
         lutris
+        open-webui
+        lmstudio
     ];
 
     programs.steam.enable = true;
