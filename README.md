@@ -57,3 +57,4 @@
 - [MyNixOS.com](https://mynixos.com/)
 - [Nix Packages Search](https://search.nixos.org/packages)
 - [Nix Channel Status](https://status.nixos.org/)
+- [NixOS Raspberry Pi Image](https://hydra.nixos.org/build/316934408)
