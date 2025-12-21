@@ -30,6 +30,7 @@
         terminaltexteffects
         teams-for-linux
         opencode
+        zstd
     ];
 
     # Display Manager

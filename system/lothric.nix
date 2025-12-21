@@ -9,6 +9,7 @@
         lutris
         lmstudio
         nvtopPackages.amd
+        rpi-imager
     ];
 
     programs.steam.enable = true;
