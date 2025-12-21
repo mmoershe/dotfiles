@@ -25,6 +25,9 @@
     networking.networkmanager.enable = true;
     # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
+    programs.bandwhich.enable = true;
+    services.tailscale.enable = true;
+
     # Set your time zone.
     time.timeZone = "Europe/Berlin";
 
