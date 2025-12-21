@@ -19,6 +19,7 @@
         python3
         lazygit
         openvpn
+        nethogs
     ];
 
     # Enable networking
