@@ -51,6 +51,7 @@
 - [x] Grub Theme
 - [x] Scripts/Binaries (writeShellScriptBin?)
 - [ ] Add more scripts (Lock?)
+- [ ] VSCodium (home-manager options or overrides or something)
 
 ## External Links
 
