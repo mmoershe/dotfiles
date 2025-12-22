@@ -5,6 +5,7 @@
         bash
         file
         jq
+        tree
         duf
         htop
         btop
