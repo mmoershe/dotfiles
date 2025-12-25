@@ -31,6 +31,7 @@
         teams-for-linux
         opencode
         zstd
+        gimp
     ];
 
     # Display Manager
