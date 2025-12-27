@@ -32,6 +32,7 @@
         opencode
         zstd
         gimp
+        firefox-devedition
     ];
 
     # Display Manager

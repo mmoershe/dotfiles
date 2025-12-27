@@ -15,20 +15,22 @@
 
 ## Stack Overview
 
-| Role                 | Software                                                    | Description & Config                                |
-| -------------------- | ----------------------------------------------------------- | --------------------------------------------------- |
-| Display Manager      | [Ly](https://codeberg.org/fairyglade/ly)                    | Lightweight TUI Display Manager                     |
-| Window Manager       | [Hyprland](https://hypr.land)                               | Tiling Wayland Compositor with Animations           |
-| Backup DE            | [GNOME](https://www.gnome.org/)                             | Simple Desktop Environment                          |
-| Wallpaper            | [Hyprpaper](https://github.com/hyprwm/hyprpaper)            | Blazing Fast Wayland Wallpaper Utility              |
-| Idle Daemon          | [Hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle/) | Hyprland's Idle Daemon                              |
-| Bar                  | [Wayland](https://github.com/Alexays/Waybar)                | Customizable Wayland Bar                            |
-| Application Launcher | [Wofi](https://hg.sr.ht/~scoopta/wofi)                      |                                                     |
-| Terminal Emulator    | [Kitty](https://sw.kovidgoyal.net/kitty/)                   | GPU based terminal emulator                         |
-| Notification Daemon  | [Mako](https://github.com/emersion/mako)                    | Lightweight Wayland Notification Daemon             |
-| File Manager         | Nautilus or Thunar or Dolphin                               | Not sure yet.                                       |
-| Main Editor          | [Neovim](https://neovim.io/)                                | Hyperextensible Vim-based Text Editor               |
-| Backup Editor        | [VSCodium](https://vscodium.com/)                           | Free/Libre Open Source Software Binaries of VS Code |
+| Role                 | Software                                                    | Description & Config                                                                           |
+| -------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Display Manager      | [Ly](https://codeberg.org/fairyglade/ly)                    | Lightweight TUI Display Manager                                                                |
+| Window Manager       | [Hyprland](https://hypr.land)                               | Tiling Wayland Compositor with Animations                                                      |
+| Backup DE            | [GNOME](https://www.gnome.org/)                             | Simple Desktop Environment                                                                     |
+| Wallpaper            | [Hyprpaper](https://github.com/hyprwm/hyprpaper)            | Blazing Fast Wayland Wallpaper Utility                                                         |
+| Idle Daemon          | [Hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle/) | Hyprland's Idle Daemon                                                                         |
+| Bar                  | [Wayland](https://github.com/Alexays/Waybar)                | Customizable Wayland Bar                                                                       |
+| Application Launcher | [Wofi](https://hg.sr.ht/~scoopta/wofi)                      |                                                                                                |
+| Terminal Emulator    | [Kitty](https://sw.kovidgoyal.net/kitty/)                   | GPU based terminal emulator                                                                    |
+| Notification Daemon  | [Mako](https://github.com/emersion/mako)                    | Lightweight Wayland Notification Daemon                                                        |
+| File Manager         | Nautilus or Thunar or Dolphin                               | Not sure yet.                                                                                  |
+| Main Editor          | [Neovim](https://neovim.io/)                                | Hyperextensible Vim-based Text Editor                                                          |
+| Backup Editor        | [VSCodium](https://vscodium.com/)                           | Free/Libre Open Source Software Binaries of VS Code                                            |
+| Main Browser         | Firefox                                                     | Currently the only viable non-Chromium browser (waiting for [Ladybird](https://ladybird.org/)) |
+| University Browser   | Firefox Developer Edition                                   | Firefox tailored for web developers                                                            |
 
 ## TODO
 
