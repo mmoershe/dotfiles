@@ -47,7 +47,7 @@
 - [x] Another DE? (Gnome or KDE?)
 - [x] Lothric Configurations
 - [ ] Thiollier Configurations
-- [ ] Improve Jekyll Theme
+- [x] Improve Jekyll Theme
 - [x] Grub Theme
 - [x] Scripts/Binaries (writeShellScriptBin?)
 - [ ] Add more scripts (Lock?)
