@@ -15,7 +15,7 @@
         thunderbird
         chromium
         discord
-        whatsapp-electron
+        zapzap
         starship
         libreoffice-still
         bitwarden-desktop
