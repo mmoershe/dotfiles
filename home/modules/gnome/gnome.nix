@@ -16,5 +16,8 @@
             gtk-theme = "Dracula";
             cursor-theme = "catppuccin-mocha-mauve-cursors";
         };
+        "org/gnome/mutter" = {
+            experimental-features = [ "scale-monitor-framebuffer" ];
+        };
     };
 }
