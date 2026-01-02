@@ -33,6 +33,7 @@
         zstd
         gimp
         firefox-devedition
+        qbittorrent
     ];
 
     # Display Manager
