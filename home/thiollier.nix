@@ -6,10 +6,6 @@
         ./desktop.nix
     ];
 
-    home.packages = with pkgs; [
-        slack
-    ];
-
     home.username = "thiollier";
     home.homeDirectory = "/home/thiollier";
 }

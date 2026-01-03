@@ -5,6 +5,10 @@
         ./desktop.nix
     ];
 
+    environment.systemPackages = with pkgs; [
+        slack
+    ];
+
     networking.hostName = "thiollier";
 
 
