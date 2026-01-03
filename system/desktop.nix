@@ -3,12 +3,8 @@
 {
     environment.systemPackages = with pkgs; [
         rose-pine-hyprcursor
-        neovim
-        thunderbird
-        chromium
         discord
         zapzap
-        starship
         libreoffice-still
         bitwarden-desktop
         nautilus
@@ -18,18 +14,22 @@
         mongodb-compass
         feh
         ytdownloader
-        localsend
         terminaltexteffects
         teams-for-linux
         opencode
         zstd
         gimp
         firefox-devedition
+        chromium
         qbittorrent
     ];
 
     programs = {
+        starship.enable = true;
+        localsend.enable = true;
+        neovim.enable = true;
         firefox.enable = true;
+        thunderbird.enable = true;
         thunar.enable = true;
         hyprland.enable = true;
     };
@@ -50,9 +50,9 @@
 
     services = {
         desktopManager.gnome.enable = true;
+        libinput.enable = true;
         xserver = {
             enable = false;
-            libinput.enable = true;
             xkb = {
                 layout = "de";
                 variant = "";
