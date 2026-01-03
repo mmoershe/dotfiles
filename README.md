@@ -45,6 +45,9 @@
   - [x] Idle
   - [ ] Proper Screensaver?
   - [x] Lock
+- [ ] Gnome Setup
+  - [ ] Wallpaper
+  - [ ] Shortcuts
 - [x] Notification Daemon
 - [x] Another DE? (Gnome or KDE?)
 - [x] Lothric Configurations
