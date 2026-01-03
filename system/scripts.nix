@@ -2,12 +2,12 @@
 
 let
     my-scripts = with pkgs; [
-        (writeShellScriptBin "clone-nvim"      (builtins.readFile ./scripts/clone_nvim_config.sh))
-        (writeShellScriptBin "check-display-server" (builtins.readFile ./scripts/check_display_server.sh))
-        (writeShellScriptBin "show-branding" (builtins.readFile ./scripts/show-branding.sh))
-        (writeShellScriptBin "screensaver" (builtins.readFile ./scripts/screensaver.sh))
-        (writeShellScriptBin "launch-screensaver" (builtins.readFile ./scripts/launch-screensaver.sh))
-        (writeShellScriptBin "lock-screen" (builtins.readFile ./scripts/lock-screen.sh))
+        (writeShellScriptBin "rellanix-nvim"      (builtins.readFile ./scripts/clone_nvim_config.sh))
+        (writeShellScriptBin "rellanix-display-server" (builtins.readFile ./scripts/check_display_server.sh))
+        (writeShellScriptBin "rellanix-branding" (builtins.readFile ./scripts/show-branding.sh))
+        (writeShellScriptBin "rellanix-screensaver" (builtins.readFile ./scripts/screensaver.sh))
+        (writeShellScriptBin "rellanix-launch-screensaver" (builtins.readFile ./scripts/launch-screensaver.sh))
+        (writeShellScriptBin "rellanix-lock-screen" (builtins.readFile ./scripts/lock-screen.sh))
     ];
 
 in
