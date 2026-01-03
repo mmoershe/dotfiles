@@ -35,7 +35,7 @@
     users.users.lothric = {
         isNormalUser = true;
         description = "Lothric";
-        extraGroups = [ "networkmanager" "wheel" ];
+        extraGroups = [ "networkmanager" "wheel" "docker" ];
         packages = with pkgs; [
             #  thunderbird
         ];

@@ -14,7 +14,7 @@
     users.users.thiollier = {
         isNormalUser = true;
         description = "Thiollier";
-        extraGroups = [ "networkmanager" "wheel" ];
+        extraGroups = [ "networkmanager" "wheel" "docker" ];
         packages = with pkgs; [
             #  thunderbird
         ];

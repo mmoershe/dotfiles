@@ -29,6 +29,7 @@
 
     programs.bandwhich.enable = true;
     services.tailscale.enable = true;
+    virtualisation.docker.enable = true;
 
     # Set your time zone.
     time.timeZone = "Europe/Berlin";

@@ -14,7 +14,7 @@
     users.users.rellana = {
         isNormalUser = true;
         description = "Rellana";
-        extraGroups = [ "networkmanager" "wheel" ];
+        extraGroups = [ "networkmanager" "wheel" "docker" ];
         packages = with pkgs; [
             #  thunderbird
         ];
