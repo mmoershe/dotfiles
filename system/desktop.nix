@@ -1,14 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
-    programs.firefox.enable = true;
-    programs.thunar.enable = true;
-
-    hardware.bluetooth.enable = true;
-
-    services.blueman.enable = true;
-
     environment.systemPackages = with pkgs; [
         rose-pine-hyprcursor
         neovim
@@ -36,27 +28,35 @@
         qbittorrent
     ];
 
+    programs = {
+        firefox.enable = true;
+        thunar.enable = true;
+        hyprland.enable = true;
+    };
+
+    # Bluetooth
+    hardware.bluetooth.enable = true;
+    services.blueman.enable = true;
+
     # Display Manager
     services.displayManager.ly = {
         enable = true;
         package = pkgs.ly;
         settings = {
-        hide_borders = false;
-        animation = "matrix";
+            hide_borders = false;
+            animation = "matrix";
         };
     };
 
-    # (Dis/En)able the X11 windowing system.
-    services.xserver.enable = false;
-    services.desktopManager.gnome.enable = true;
-
-    # Hyprland stuff
-    programs.hyprland.enable = true;
-
-    # Configure keymap in X11
-    services.xserver.xkb = {
-        layout = "de";
-        variant = "";
-        options = "caps:escape";
+    services = {
+        desktopManager.gnome.enable = true;
+        xserver = {
+            enable = false;
+            xkb = {
+                layout = "de";
+                variant = "";
+                options = "caps:escape";
+            };
+        };
     };
 }
