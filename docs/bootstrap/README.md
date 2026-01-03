@@ -19,6 +19,8 @@
 sudo nixos-rebuild switch --flake github:mmoershe/dotfiles#configuration --impure
 ```
 
+After this, a reboot may be required, because the hostname will be all messed up.
+
 ### 3. User Configuration
 
 ```bash
