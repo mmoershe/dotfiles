@@ -52,6 +52,7 @@
         desktopManager.gnome.enable = true;
         xserver = {
             enable = false;
+            libinput.enable = true;
             xkb = {
                 layout = "de";
                 variant = "";

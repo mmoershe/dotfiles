@@ -73,26 +73,25 @@
         #media-session.enable = true;
     };
 
-    # Enable touchpad support (enabled default in most desktopManager).
-    # services.xserver.libinput.enable = true;
-
-    # Bootloader.
-    boot.loader.systemd-boot.enable = false;
-    boot.loader.grub.enable = true;
-    boot.loader.grub.efiSupport = true;
-    boot.loader.grub.device = "nodev";
-    boot.loader.grub.useOSProber = true;
-    boot.loader.grub = {
-        minegrub-theme = {
-            enable = true;
-            splash = "100% Flakes!";
-            background = "background_options/1.8  - [Classic Minecraft].png";
-            boot-options-count = 4;
-        };
+    # Bootloader
+    boot.loader = {
+            systemd-boot.enable = false;
+            efi.canTouchEfiVariables = true;
+            grub = {
+                    enable = true;
+                    efiSupport = true;
+                    device = "nodev";
+                    useOSProber = true;
+                    minegrub-theme = {
+                        enable = true;
+                        splash = "100% Flakes!";
+                        background = "background_options/1.8  - [Classic Minecraft].png";
+                        boot-options-count = 4;
+                    };
+            };
     };
-    boot.loader.efi.canTouchEfiVariables = true;
-    nixpkgs.config.allowUnfree = true;
 
-    system.stateVersion = "25.05";
+    nixpkgs.config.allowUnfree = true;
+    system.stateVersion = "25.11";
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
