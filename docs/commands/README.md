@@ -10,9 +10,15 @@ Updates dependencies pinned in `flake.lock`.
 
 ## Rebuild and Switch with Flakes
 
+### Remote
+
 ```bash
-sudo nixos-rebuild switch --flake github:mmoershe/dotfiles#configuration --impure
+sudo nixos-rebuild switch --flake github:username/repository#configuration --impure
 ```
+
+For some reason, the branch can be specified like _this_: `username/repository/branch#configuration`
+
+### Local
 
 ```bash
 sudo nixos-rebuild switch --flake .#configuration --impure
