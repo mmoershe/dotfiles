@@ -2,9 +2,13 @@
 
 set -e # Exit on error
 
+NVIM_CONFIG_DIR="$HOME/.config/nvim"
+NVIM_CONFIG_REPO="https://github.com/mmoershe/nvim.config"
+
 if [ -d "$HOME/.config/nvim" ]; then
-    echo "Neovim-Config already exists."
-    # maybe update the config (pull)
+    echo "Neovim-Config already exists. Pulling changes..."
+    git -C "$NVIM_CONFIG_DIR" pull --ff-only
 else
-    git clone https://github.com/mmoershe/config.nvim "$HOME/.config/nvim"
+    echo "Cloning Neovim config..."
+    git clone "$NVIM_CONFIG_REPO" "$NVIM_CONFIG_DIR"
 fi
