@@ -19,6 +19,8 @@
         onefetch
         python3
         lazygit
+        lazyssh
+        lazydocker
         openvpn
         nethogs
     ];
