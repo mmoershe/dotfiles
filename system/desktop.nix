@@ -22,6 +22,8 @@
         firefox-devedition
         chromium
         qbittorrent
+        claude-code
+        claude-monitor
     ];
 
     programs = {
