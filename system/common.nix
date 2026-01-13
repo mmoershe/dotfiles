@@ -23,6 +23,7 @@
         lazydocker
         openvpn
         nethogs
+        gum
     ];
 
     # Enable networking
