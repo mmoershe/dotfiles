@@ -24,6 +24,7 @@
         qbittorrent
         claude-code
         claude-monitor
+        copilot-cli
     ];
 
     programs = {
