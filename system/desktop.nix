@@ -17,6 +17,7 @@
         terminaltexteffects
         teams-for-linux
         opencode
+        starship
         zstd
         gimp
         firefox-devedition
@@ -28,7 +29,6 @@
     ];
 
     programs = {
-        starship.enable = true;
         localsend.enable = true;
         neovim.enable = true;
         firefox.enable = true;
