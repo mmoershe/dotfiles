@@ -4,9 +4,23 @@
     home.packages = with pkgs; [
         rose-pine-cursor
         catppuccin-cursors.mochaMauve
+        gnome-shell-extensions
+        gnomeExtensions.dash-to-dock
     ];
 
+    programs.gnome-shell = {
+        enable = true;
+    };
+
+    dconf.enable = true;
+
     dconf.settings = {
+        "org/gnome/shell" = {
+            disable-user-extensions = false;
+            enabled-extensions = [
+                "dash-to-dock@micxgx.gmail.com" 
+            ];
+        };
         "org/gnome/desktop/input-sources" = {
             xkb-options = ["caps:escape"];
         };
