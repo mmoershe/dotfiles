@@ -8,6 +8,7 @@ let
         (writeShellScriptBin "rellanix-screensaver" (builtins.readFile ./scripts/screensaver.sh))
         (writeShellScriptBin "rellanix-launch-screensaver" (builtins.readFile ./scripts/launch-screensaver.sh))
         (writeShellScriptBin "rellanix-lock-screen" (builtins.readFile ./scripts/lock-screen.sh))
+        (writeShellScriptBin "rellanix-codium"      (builtins.readFile ./scripts/codium-switch.sh))
         (writeShellScriptBin "rellanix" (builtins.readFile ./scripts/nix-commands.sh))
     ];
 
