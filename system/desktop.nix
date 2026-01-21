@@ -30,7 +30,6 @@
 
     programs = {
         localsend.enable = true;
-        neovim.enable = true;
         firefox.enable = true;
         thunderbird.enable = true;
         thunar.enable = true;

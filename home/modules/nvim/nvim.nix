@@ -2,7 +2,6 @@
 
 {
     home.packages = with pkgs; [
-        neovim
         tree-sitter
         gcc
         gnumake
@@ -17,6 +16,12 @@
         trashy
         cargo
         marksman
+        ghostscript
+        tectonic
     ];
+
+    programs = {
+        neovim.enable = true;
+    };
 }
 
