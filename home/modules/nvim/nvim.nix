@@ -26,7 +26,6 @@
     marksman
     ghostscript
     tectonic
-    lazygit
   ];
 
   programs.nvf = {
@@ -92,9 +91,12 @@
       binds.whichKey.enable = true;
       filetree.neo-tree.enable = true;
 
-      terminal.toggleterm.lazygit = {
+      terminal.toggleterm = {
         enable = true;
-        mappings.open = "<leader>gg";
+        lazygit = {
+          enable = true;
+          mappings.open = "<leader>gg";
+        };
       };
 
       git.enable = true;

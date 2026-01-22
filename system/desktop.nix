@@ -34,6 +34,7 @@
         thunderbird.enable = true;
         thunar.enable = true;
         hyprland.enable = true;
+        lazygit.enable = true;
     };
 
     # Bluetooth
