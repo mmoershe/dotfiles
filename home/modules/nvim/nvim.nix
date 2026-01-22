@@ -52,7 +52,7 @@
 
       theme = {
         enable = true;
-        name = "dracula";
+        name = "catppuccin";
         style = "mocha";
       };
 
