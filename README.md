@@ -64,3 +64,4 @@
 - [Nix Packages Search](https://search.nixos.org/packages)
 - [Nix Channel Status](https://status.nixos.org/)
 - [NixOS Raspberry Pi Image](https://hydra.nixos.org/build/316934408)
+- [NFV Example](https://gitlab.com/atfpersonalfiles/atomic.nvf/-/blob/PRD/modules/plugins/telescope.nix?ref_type=heads)
