@@ -31,6 +31,12 @@
         silent = true;
         desc = "Move to right window";
       };
+      "<leader>tf" = {
+        action = "<cmd>lua require('conform').format()<CR>";
+        noremap = true;
+        silent = true;
+        desc = "Format with Conform";
+      };
     };
   };
 }

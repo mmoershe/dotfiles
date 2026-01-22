@@ -1,13 +1,34 @@
 {
   programs.nvf.settings.vim = {
-    lsp.enable = true;
-    lsp.formatOnSave = false;
+    lsp = {
+      enable = true;
+      formatOnSave = false;
+    };
+
+    formatter.conform-nvim.enable = true;
+
+    treesitter.enable = true;
+
     languages = {
+      enableFormat = true;
       lua.enable = true;
       markdown.enable = true;
       nix.enable = true;
-    };
 
-    treesitter.enable = true;
+      python = {
+        enable = true;
+        lsp = {
+          enable = true;
+          servers = [ "basedpyright" ];
+        };
+        format = {
+          enable = true;
+          type = [ "ruff" ];
+        };
+        treesitter.enable = true;
+        dap.enable = false;
+      };
+
+    };
   };
 }
