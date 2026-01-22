@@ -71,6 +71,24 @@
           findFiles = "<leader><space>";
           liveGrep = "<leader>sg";
         };
+        setupOpts = {
+          color_devicons = true;
+          defaults = {
+            layout_strategy = "horizontal";
+            layout_config = {
+              width = 0.8;
+              height = 0.8;
+              preview_cutoff = 120;
+              horizontal = {
+                preview_width = 0.55;
+                prompt_position = "bottom";
+              };
+              vertical = {
+                mirror = true;
+              };
+            };
+          };
+        };
       };
 
       utility.snacks-nvim = {
