@@ -14,6 +14,7 @@
     ./modules/languages.nix
     ./modules/plugins.nix
     ./modules/keymaps.nix
+    ./modules/autocmd.nix
   ];
 
   programs.nvf = {
