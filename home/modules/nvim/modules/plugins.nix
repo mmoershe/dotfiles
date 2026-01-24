@@ -41,9 +41,17 @@
     mini.icons.enable = true;
     autocomplete.nvim-cmp.enable = true;
     statusline.lualine.enable = true;
-    tabline.nvimBufferline.enable = true;
     binds.whichKey.enable = true;
     filetree.neo-tree.enable = true;
+
+    tabline.nvimBufferline = {
+      enable = true;
+      mappings = {
+        cycleNext = "<S-l>";
+        cyclePrevious = "<S-h>";
+        closeCurrent = "<leader>bd";
+      };
+    };
 
     terminal.toggleterm = {
       enable = true;
