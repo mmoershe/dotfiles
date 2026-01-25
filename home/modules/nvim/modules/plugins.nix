@@ -43,6 +43,7 @@
     statusline.lualine.enable = true;
     binds.whichKey.enable = true;
     filetree.neo-tree.enable = true;
+    visuals.indent-blankline.enable = true;
 
     tabline.nvimBufferline = {
       enable = true;

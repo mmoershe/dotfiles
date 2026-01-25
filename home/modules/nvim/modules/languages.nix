@@ -8,6 +8,7 @@
     formatter.conform-nvim.enable = true;
 
     treesitter.enable = true;
+    treesitter.indent.enable = true;
 
     languages = {
       enableFormat = true;

@@ -7,9 +7,10 @@
       tabstop = 4;
       shiftwidth = 4;
       smartindent = true;
+      breakindent = true;
+      autoindent = true;
       expandtab = true;
       softtabstop = 4;
-      breakindent = true;
       wrap = true;
       mouse = "a";
       showmode = false;
