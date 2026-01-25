@@ -31,6 +31,7 @@
             beautifulsoup4
             pandas
             requests
+            tqdm
         ]))
     ];
 
