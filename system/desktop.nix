@@ -26,6 +26,7 @@
         claude-code
         claude-monitor
         copilot-cli
+        filezilla
     ];
 
     programs = {
