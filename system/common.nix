@@ -17,7 +17,6 @@
         vim
         fastfetch
         onefetch
-        python3
         lazyssh
         lazydocker
         openvpn
