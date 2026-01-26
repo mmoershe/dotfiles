@@ -57,7 +57,7 @@
           ];
           opts = {
             position = "center";
-            hl = "Type";
+            hl = "Number";
           };
         }
         {
