@@ -39,6 +39,7 @@
     };
 
     mini.icons.enable = true;
+    visuals.nvim-web-devicons.enable = true;
     autocomplete.nvim-cmp.enable = true;
     statusline.lualine.enable = true;
     binds.whichKey.enable = true;
