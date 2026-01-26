@@ -35,7 +35,69 @@
 
     dashboard.alpha = {
       enable = true;
-      theme = "dashboard";
+      theme = null;
+      layout = [
+        {
+          type = "text";
+          val = [
+            ""
+            ""
+            ""
+            ""
+            " ███▄    █ ▓█████  ▒█████   ██▒   █▓ ██▓ ███▄ ▄███▓"
+            " ██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▓██░   █▒▓██▒▓██▒▀█▀ ██▒"
+            "▓██  ▀█ ██▒▒███   ▒██░  ██▒ ▓██  █▒░▒██▒▓██    ▓██░"
+            "▓██▒  ▐▌██▒▒▓█  ▄ ▒██   ██░  ▒██ █░░░██░▒██    ▒██ "
+            "▒██░   ▓██░░▒████▒░ ████▓▒░   ▒▀█░  ░██░▒██▒   ░██▒"
+            "░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒░▒░▒░    ░ ▐░  ░▓  ░ ▒░   ░  ░"
+            "░ ░░   ░ ▒░ ░ ░  ░  ░ ▒ ▒░    ░ ░░   ▒ ░░  ░      ░"
+            "   ░   ░ ░    ░   ░ ░ ░ ▒       ░░   ▒ ░░      ░   "
+            "         ░    ░  ░    ░ ░        ░   ░         ░   "
+            "                                ░                  "
+          ];
+          opts = {
+            position = "center";
+            hl = "Type";
+          };
+        }
+        {
+          type = "padding";
+          val = 2;
+        }
+        {
+          type = "button";
+          val = "󰈈  New File";
+          on_press.__raw = "function() vim.cmd('enew') end";
+          opts = {
+            position = "center";
+            hl = "Function";
+            shortcut = "e";
+          };
+        }
+        {
+          type = "button";
+          val = "󰒲  Find File";
+          on_press.__raw = "function() vim.cmd('Telescope find_files') end";
+          opts = {
+            position = "center";
+            hl = "Function";
+            shortcut = "f";
+          };
+        }
+        {
+          type = "button";
+          val = "󰅚  Quit";
+          on_press.__raw = "function() vim.cmd('qa') end";
+          opts = {
+            position = "center";
+            hl = "Function";
+            shortcut = "q";
+          };
+        }
+      ];
+      opts = {
+        margin = 5;
+      };
     };
 
     mini.icons.enable = true;
