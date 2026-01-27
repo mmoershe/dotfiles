@@ -33,6 +33,15 @@
       };
     };
 
+    # Autopairs for brackets, quotes, etc.
+    autopairs.nvim-autopairs.enable = true;
+
+    # Comments
+    comments.comment-nvim.enable = true;
+
+    # Better surround operations
+    utility.surround.enable = true;
+
     dashboard.alpha = {
       enable = true;
       theme = null;
@@ -107,6 +116,9 @@
     binds.whichKey.enable = true;
     filetree.neo-tree.enable = true;
     visuals.indent-blankline.enable = true;
+
+    # Highlight TODO/FIXME/etc comments
+    notes.todo-comments.enable = true;
 
     tabline.nvimBufferline = {
       enable = true;

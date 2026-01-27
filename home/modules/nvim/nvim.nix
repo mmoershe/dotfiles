@@ -39,5 +39,8 @@
     marksman
     ghostscript
     tectonic
+    pyright
+    basedpyright
+    ruff
   ];
 }
