@@ -14,6 +14,7 @@
       wrap = true;
       mouse = "a";
       showmode = false;
+      autoread = true;
     };
 
     viAlias = true;
