@@ -34,6 +34,8 @@
 
 ## TODO
 
+- [ ] NVF / Nvim setup
+  - [ ] Add more languages
 - [ ] Hyprland Setup
   - [x] Wallpaper (Hyprpaper?)
   - [ ] Changing / Animated Wallpaper (awww / swww)
