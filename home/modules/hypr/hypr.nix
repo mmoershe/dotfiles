@@ -7,6 +7,10 @@ let
         if hostname == "rellana" then ./override-rellana.conf
         else if hostname == "lothric" then ./override-lothric.conf
         else ./override.conf;
+
+    hyprpaperDirectory = 
+        if hostname == "thiollier" then ./hyprpaper-thiollier.conf
+        else ./hyprpaper.conf;
 in
 {
     home.packages = with pkgs; [
@@ -24,7 +28,7 @@ in
         "${hyprConfigDir}/looknfeel.conf".source  = ./looknfeel.conf;
         "${hyprConfigDir}/hypridle.conf".source = ./hypridle.conf;
         "${hyprConfigDir}/hyprlock.conf".source = ./hyprlock.conf;
-        "${hyprConfigDir}/hyprpaper.conf".source = ./hyprpaper.conf;
+        "${hyprConfigDir}/hyprpaper.conf".source = ./hyprpaper-thiollier.conf;
         "${hyprConfigDir}/override.conf".source  = overrideFile;
     };
 }
