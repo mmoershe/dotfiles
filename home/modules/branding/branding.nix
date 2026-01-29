@@ -1,14 +1,9 @@
 { config, pkgs, lib, hostname, ... }:
 
-let
-    brandingFile =
-        if hostname == "rellana" then ./branding-rellana.txt
-        else if hostname == "lothric" then ./branding-lothric.txt
-        else ./branding.txt;
-in
 {
-    home.file = {
-        ".config/branding.txt".source = brandingFile;
+   home.file = {
+        ".config/nixos_branding.txt".source = ./nixos_branding.txt;
+        ".config/rellanix_branding.txt".source = ./rellanix_branding.txt;
     };
 }
 
