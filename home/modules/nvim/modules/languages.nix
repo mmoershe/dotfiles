@@ -19,8 +19,8 @@
     diagnostics = {
       enable = true;
       config = {
-        virtual_text = false; # Disable inline virtual text (use virtual_lines instead)
-        virtual_lines = true; # Show diagnostics as virtual lines below code
+        virtual_text = true; # Disable inline virtual text (use virtual_lines instead)
+        virtual_lines = false; # Show diagnostics as virtual lines below code
         signs = true;
         underline = true;
         update_in_insert = false;
