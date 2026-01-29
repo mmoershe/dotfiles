@@ -2,6 +2,7 @@
 
 {
     imports = [
+        ./modules/wallpapers/wallpapers.nix
         ./modules/bash/bash.nix
         ./modules/hypr/hypr.nix
         ./modules/nvim/nvim.nix
