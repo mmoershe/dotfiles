@@ -6,6 +6,7 @@ let
     overrideFile =
         if hostname == "rellana" then ./override-rellana.conf
         else if hostname == "lothric" then ./override-lothric.conf
+        else if hostname == "thiollier" then ./override-thiollier.conf
         else ./override.conf;
 
     hyprpaperDirectory = 
