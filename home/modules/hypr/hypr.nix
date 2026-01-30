@@ -28,7 +28,7 @@ in
         "${hyprConfigDir}/looknfeel.conf".source  = ./looknfeel.conf;
         "${hyprConfigDir}/hypridle.conf".source = ./hypridle.conf;
         "${hyprConfigDir}/hyprlock.conf".source = ./hyprlock.conf;
-        "${hyprConfigDir}/hyprpaper.conf".source = ./hyprpaper-thiollier.conf;
+        "${hyprConfigDir}/hyprpaper.conf".source = hyprpaperDirectory;
         "${hyprConfigDir}/override.conf".source  = overrideFile;
     };
 }
