@@ -4,9 +4,7 @@
   lib,
   nvf,
   ...
-}:
-
-{
+}: {
   imports = [
     nvf.homeManagerModules.default
     ./modules/editor-options.nix
@@ -19,7 +17,7 @@
 
   programs.nvf = {
     enable = true;
-    settings.vim = { };
+    settings.vim = {};
   };
 
   home.packages = with pkgs; [
@@ -42,5 +40,10 @@
     pyright
     basedpyright
     ruff
+    nodePackages.typescript-language-server
+    nodePackages.prettier
+    nodePackages.eslint_d
+    nodePackages."@tailwindcss/language-server"
+    vscode-langservers-extracted
   ];
 }

@@ -53,9 +53,39 @@
         treesitter.enable = true;
         dap.enable = false;
       };
+
+      ts = {
+        enable = true;
+        lsp = {
+          enable = true;
+          servers = [ "ts_ls" ]; # TypeScript Language Server
+        };
+        format = {
+          enable = true;
+          type = [ "prettier" ];
+        };
+        treesitter.enable = true;
+        extraDiagnostics = {
+          enable = true;
+          types = [ "eslint_d" ]; # Fast ESLint for diagnostics
+        };
+      };
+
+      html = {
+        enable = true;
+        treesitter.enable = true;
+      };
+
+      css = {
+        enable = true;
+        lsp = {
+          enable = true;
+          servers = [ "cssls" ];
+        };
+        treesitter.enable = true;
+      };
     };
 
-    # Configure basedpyright settings via vim.lsp.servers (Neovim 0.11 API)
     lsp.servers.basedpyright = {
       enable = true;
       filetypes = [ "python" ];
@@ -74,6 +104,92 @@
               callArgumentNames = true;
               pytestParameters = true;
             };
+          };
+        };
+      };
+    };
+
+    # Configure TypeScript Language Server
+    lsp.servers.ts-ls = {
+      enable = true;
+      filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" "tsx" "jsx" ];
+      root_markers = [ "package.json" "tsconfig.json" "jsconfig.json" ".git" ];
+      settings = {
+        typescript = {
+          inlayHints = {
+            includeInlayParameterNameHints = "all";
+            includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+            includeInlayFunctionParameterTypeHints = true;
+            includeInlayVariableTypeHints = true;
+            includeInlayVariableTypeHintsWhenTypeMatchesName = true;
+            includeInlayPropertyDeclarationTypeHints = true;
+            includeInlayFunctionLikeReturnTypeHints = true;
+            includeInlayEnumMemberValueHints = true;
+          };
+        };
+        javascript = {
+          inlayHints = {
+            includeInlayParameterNameHints = "all";
+            includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+            includeInlayFunctionParameterTypeHints = true;
+            includeInlayVariableTypeHints = true;
+            includeInlayVariableTypeHintsWhenTypeMatchesName = true;
+            includeInlayPropertyDeclarationTypeHints = true;
+            includeInlayFunctionLikeReturnTypeHints = true;
+            includeInlayEnumMemberValueHints = true;
+          };
+        };
+      };
+    };
+
+    lsp.servers.tailwindcss = {
+      enable = true;
+      filetypes = [ "html" "css" "scss" "javascript" "javascriptreact" "typescript" "typescriptreact" "vue" "svelte" ];
+      root_markers = [ "tailwind.config.js" "tailwind.config.ts" "tailwind.config.cjs" "tailwind.config.mjs" ];
+      settings = {
+        tailwindCSS = {
+          experimental = {
+            classRegex = [
+              [ "cva\\(([^)]*)\\)" "[\"'`]([^\"'`]*).*?[\"'`]" ]
+              [ "cn\\(([^)]*)\\)" "[\"'`]([^\"'`]*).*?[\"'`]" ]
+              [ "clsx\\(([^)]*)\\)" "[\"'`]([^\"'`]*).*?[\"'`]" ]
+            ];
+          };
+          classAttributes = [ "class" "className" "classList" "ngClass" ];
+          lint = {
+            cssConflict = "warning";
+            invalidApply = "error";
+            invalidScreen = "error";
+            invalidVariant = "error";
+            invalidConfigPath = "error";
+            invalidTailwindDirective = "error";
+            recommendedVariantOrder = "warning";
+          };
+          validate = true;
+        };
+      };
+    };
+
+    lsp.servers.cssls = {
+      enable = true;
+      filetypes = [ "css" "scss" "less" ];
+      settings = {
+        css = {
+          validate = true;
+          lint = {
+            unknownAtRules = "ignore"; # Ignore @tailwind and other custom at-rules
+          };
+        };
+        scss = {
+          validate = true;
+          lint = {
+            unknownAtRules = "ignore";
+          };
+        };
+        less = {
+          validate = true;
+          lint = {
+            unknownAtRules = "ignore";
           };
         };
       };
