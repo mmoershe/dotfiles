@@ -20,6 +20,7 @@
         starship
         zstd
         gimp
+        dl-librescore
         firefox-devedition
         chromium
         qbittorrent
