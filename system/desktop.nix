@@ -28,6 +28,7 @@
         claude-monitor
         copilot-cli
         filezilla
+        texliveTeTeX
         (python313.withPackages (ps: with ps; [
             beautifulsoup4
             pandas
