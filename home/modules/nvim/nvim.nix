@@ -40,7 +40,6 @@
     texlab
     texlive.combined.scheme-full
     zathura
-    chktex
     pyright
     basedpyright
     ruff
