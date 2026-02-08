@@ -4,7 +4,6 @@
     environment.systemPackages = with pkgs; [
         rose-pine-hyprcursor
         discord
-        zapzap
         libreoffice-still
         bitwarden-desktop
         nautilus
