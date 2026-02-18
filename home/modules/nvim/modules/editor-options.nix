@@ -1,5 +1,6 @@
 {
   programs.nvf.settings.vim = {
+    searchCase = "smart";
     options = {
       number = true;
       relativenumber = true;
