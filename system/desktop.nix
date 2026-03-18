@@ -29,11 +29,13 @@
         filezilla
         texliveTeTeX
         texlivePackages.biblatex
+        zoom-us
         (python313.withPackages (ps: with ps; [
             beautifulsoup4
             pandas
             requests
             tqdm
+            streamlit
         ]))
     ];
 
