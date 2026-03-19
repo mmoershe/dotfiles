@@ -22,7 +22,7 @@
 | Backup DE            | [GNOME](https://www.gnome.org/)                             | Simple Desktop Environment                                                                     |
 | Wallpaper            | [Hyprpaper](https://github.com/hyprwm/hyprpaper)            | Blazing Fast Wayland Wallpaper Utility                                                         |
 | Idle Daemon          | [Hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle/) | Hyprland's Idle Daemon                                                                         |
-| Bar                  | [Wayland](https://github.com/Alexays/Waybar)                | Customizable Wayland Bar                                                                       |
+| Bar                  | [Waybar](https://github.com/Alexays/Waybar)                 | Customizable Wayland Bar                                                                       |
 | Application Launcher | [Wofi](https://hg.sr.ht/~scoopta/wofi)                      |                                                                                                |
 | Terminal Emulator    | [Kitty](https://sw.kovidgoyal.net/kitty/)                   | GPU based terminal emulator                                                                    |
 | Notification Daemon  | [Mako](https://github.com/emersion/mako)                    | Lightweight Wayland Notification Daemon                                                        |
