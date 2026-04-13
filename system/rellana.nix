@@ -1,26 +1,35 @@
-{ config, pkgs, ... }:
-
 {
-    imports = [
-        ./desktop.nix
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [
+    ./desktop.nix
+  ];
+
+  environment.systemPackages = with pkgs; [
+    pokemmo-installer
+  ];
+
+  networking.hostName = "rellana";
+
+  # This defines a user account
+  # Make sure to set a password before this
+  # (GUI installer or 'passwd')
+  users.users.rellana = {
+    isNormalUser = true;
+    description = "Rellana";
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
     ];
+    packages = with pkgs; [
+      #  thunderbird
+    ];
+  };
 
-    networking.hostName = "rellana";
-
-
-    # This defines a user account
-    # Make sure to set a password before this
-    # (GUI installer or 'passwd')
-    users.users.rellana = {
-        isNormalUser = true;
-        description = "Rellana";
-        extraGroups = [ "networkmanager" "wheel" "docker" ];
-        packages = with pkgs; [
-            #  thunderbird
-        ];
-    };
-
-    # Configure network proxy if necessary
-    # networking.proxy.default = "http://user:password@proxy:port/";
-    # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  # Configure network proxy if necessary
+  # networking.proxy.default = "http://user:password@proxy:port/";
+  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 }
