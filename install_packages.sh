@@ -3,7 +3,7 @@
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PACKAGES_DIR="$BASE_DIR/packages"
 PACKAGES_AUR_DIR="$PACKAGES_DIR/aur"
-PROFILE="${1:-default}"
+PROFILE="${1:-$(whoami)}"
 VALID_PROFILES=("lothric" "rellana" "thiollier")
 
 install_pacman_packages_from_file() {
@@ -74,8 +74,8 @@ install_aur_packages_from_file() {
     yay -S --noconfirm "${packages[@]}"
 }
 
-if [[ -z "$1" ]] || [[ ! " ${VALID_PROFILES[@]} " =~ " ${PROFILE} " ]]; then
-    echo "Error: Invalid or missing profile argument"
+if [[ ! " ${VALID_PROFILES[@]} " =~ " ${PROFILE} " ]]; then
+    echo "Error: Invalid profile '$PROFILE'"
     echo "Valid profiles: ${VALID_PROFILES[*]}"
     exit 1
 fi
