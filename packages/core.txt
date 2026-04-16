@@ -8,3 +8,4 @@ nvim
 github-cli
 lazygit
 stow
+starship
