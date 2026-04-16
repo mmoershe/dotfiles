@@ -1,2 +1,4 @@
 hyprland
 waybar
+mako
+wofi
