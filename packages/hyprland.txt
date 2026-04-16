@@ -2,3 +2,4 @@ hyprland
 waybar
 mako
 wofi
+ttf-jetbrains-mono-nerd

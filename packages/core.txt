@@ -1,7 +1,10 @@
+tree
 gum
+fastfetch
+onefetch
 git
 vim
 nvim
 github-cli
 lazygit
-
+stow
