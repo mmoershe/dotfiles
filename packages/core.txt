@@ -1,0 +1,7 @@
+gum
+git
+vim
+nvim
+github-cli
+lazygit
+
