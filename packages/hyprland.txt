@@ -1,4 +1,5 @@
 hyprland
+hyprpaper
 waybar
 mako
 wofi
