@@ -29,11 +29,11 @@ if [[ $choice == "update" ]]; then
 fi
 
 if [[ $choice == "install packages" ]]; then
-    echo install packages
     source "$SCRIPTS_DIR/install_packages.sh"
     install_packages
 fi
 
 if [[ $choice == "stow all" ]]; then
-    echo stow all
+    source "$SCRIPTS_DIR/stow_all.sh"
+    stow_all
 fi
