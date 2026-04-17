@@ -3,6 +3,7 @@ gum
 fastfetch
 onefetch
 git
+eza
 vim
 nvim
 github-cli

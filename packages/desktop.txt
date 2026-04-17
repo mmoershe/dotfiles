@@ -1,1 +1,4 @@
 nautilus
+brightnessctl
+thunderbird
+discord
