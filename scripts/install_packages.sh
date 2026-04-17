@@ -1,11 +1,5 @@
 #!/bin/bash
 
-BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PACKAGES_DIR="$BASE_DIR/packages"
-PACKAGES_AUR_DIR="$PACKAGES_DIR/aur"
-PROFILE="${1:-$(whoami)}"
-VALID_PROFILES=("lothric" "rellana" "thiollier")
-
 install_pacman_packages_from_file() {
     local file_path="$1"
 
@@ -74,33 +68,47 @@ install_aur_packages_from_file() {
     yay -S --noconfirm "${packages[@]}"
 }
 
-if [[ ! " ${VALID_PROFILES[@]} " =~ " ${PROFILE} " ]]; then
-    echo "Error: Invalid profile '$PROFILE'"
-    echo "Valid profiles: ${VALID_PROFILES[*]}"
-    exit 1
+install_packages() {
+    SCRIPTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    BASE_DIR="$SCRIPTS_DIR/.."
+    PACKAGES_DIR="$BASE_DIR/packages"
+    PACKAGES_AUR_DIR="$PACKAGES_DIR/aur"
+    PROFILE="${1:-$(whoami)}"
+    VALID_PROFILES=("lothric" "rellana" "thiollier")
+
+    if [[ ! " ${VALID_PROFILES[@]} " =~ " ${PROFILE} " ]]; then
+        echo "Error: Invalid profile '$PROFILE'"
+        echo "Valid profiles: ${VALID_PROFILES[*]}"
+        exit 1
+    fi
+
+    echo "Installing $PROFILE packages"
+
+    if [[ $PROFILE == "lothric" ]]; then
+        install_pacman_packages_from_file $PACKAGES_DIR/core.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/code.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
+    fi
+
+    if [[ $PROFILE == "rellana" ]]; then
+        install_pacman_packages_from_file $PACKAGES_DIR/core.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/code.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/hyprland.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
+        install_aur_packages_from_file $PACKAGES_AUR_DIR/code.txt
+    fi
+
+    if [[ $PROFILE == "thiollier" ]]; then
+        install_pacman_packages_from_file $PACKAGES_DIR/core.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/code.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
+        install_aur_packages_from_file $PACKAGES_AUR_DIR/thiollier.txt
+    fi
+
+    echo
+    echo "bye $PROFILE!"
+}
+
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    install_packages
 fi
-
-echo "Installing $PROFILE packages"
-
-if [[ $PROFILE == "lothric" ]]; then
-    install_pacman_packages_from_file $PACKAGES_DIR/core.txt
-    install_pacman_packages_from_file $PACKAGES_DIR/code.txt
-    install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
-fi
-
-if [[ $PROFILE == "rellana" ]]; then
-    install_pacman_packages_from_file $PACKAGES_DIR/core.txt
-    install_pacman_packages_from_file $PACKAGES_DIR/code.txt
-    install_pacman_packages_from_file $PACKAGES_DIR/hyprland.txt
-    install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
-fi
-
-if [[ $PROFILE == "thiollier" ]]; then
-    install_pacman_packages_from_file $PACKAGES_DIR/core.txt
-    install_pacman_packages_from_file $PACKAGES_DIR/code.txt
-    install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
-    install_aur_packages_from_file $PACKAGES_AUR_DIR/thiollier.txt
-fi
-
-echo
-echo "bye $PROFILE!"
