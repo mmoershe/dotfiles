@@ -31,7 +31,7 @@ install_pacman_packages_from_file() {
     fi
 
     echo "Installing ${#packages[@]} packages..."
-    sudo pacman -S --noconfirm "${packages[@]}"
+    sudo pacman -S --needed --noconfirm "${packages[@]}"
 }
 
 install_aur_packages_from_file() {
