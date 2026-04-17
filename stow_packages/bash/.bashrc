@@ -6,3 +6,4 @@ fastfetch -c paleofetch
 echo
 
 alias lg="lazygit"
+alias ls="eza"
