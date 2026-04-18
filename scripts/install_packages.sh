@@ -65,7 +65,7 @@ install_aur_packages_from_file() {
     fi
 
     echo "Installing ${#packages[@]} AUR packages..."
-    yay -S --noconfirm "${packages[@]}"
+    yay -S --needed --noconfirm "${packages[@]}"
 }
 
 install_packages() {
@@ -103,7 +103,9 @@ install_packages() {
     if [[ $PROFILE == "thiollier" ]]; then
         install_pacman_packages_from_file $PACKAGES_DIR/core.txt
         install_pacman_packages_from_file $PACKAGES_DIR/code.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/hyprland.txt
         install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
+        install_aur_packages_from_file $PACKAGES_AUR_DIR/code.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/thiollier.txt
     fi
 
