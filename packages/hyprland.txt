@@ -4,3 +4,5 @@ waybar
 mako
 wofi
 ttf-jetbrains-mono-nerd
+wl-clipboard
+
