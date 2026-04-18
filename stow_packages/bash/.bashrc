@@ -2,7 +2,7 @@ eval "$(starship init bash)"
 
 # TERMINAL STARTUP
 echo
-fastfetch -c paleofetch
+fastfetch -c paleofetch --logo arch2
 echo
 
 alias lg="lazygit"
