@@ -10,3 +10,4 @@ github-cli
 lazygit
 stow
 starship
+systemctl-tui
