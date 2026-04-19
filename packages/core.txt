@@ -1,4 +1,6 @@
 tree
+htop
+btop
 gum
 fastfetch
 onefetch
@@ -11,3 +13,5 @@ lazygit
 stow
 starship
 systemctl-tui
+impala
+diskonaut
