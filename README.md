@@ -12,6 +12,20 @@ sudo pacman -Syu && sudo pacman -S git gum && git clone --branch endeavouros-res
 
 Just clone [PedroMMarinho/grubsouls-theme](https://github.com/PedroMMarinho/grubsouls-theme) and execute install script.
 
+### Display Manager - Ly
+
+```bash
+systemctl enable --now ly@tty5.service
+```
+
+```bash
+systemctl disable getty@tty5.service
+```
+
+```bash
+systemctl disable gdm.service
+```
+
 ## Links
 
 - [Arch Linux Packages Search](https://archlinux.org/packages/)
