@@ -15,3 +15,4 @@ starship
 systemctl-tui
 impala
 diskonaut
+cpufetch

@@ -4,3 +4,7 @@ nautilus
 brightnessctl
 thunderbird
 discord
+thunderbird
+bitwarden
+blueman
+bluetui
