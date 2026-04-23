@@ -5,7 +5,7 @@
 ### Quickstart
 
 ```bash
-sudo pacman -Syu && sudo pacman -S git gum && git clone --branch endeavouros-restructure https://github.com/mmoershe/dotfiles ~/dotfiles && bash ~/dotfiles/.entry.sh
+sudo pacman -Syu && sudo pacman -S git gum && git clone --branch endeavouros-restructure https://github.com/mmoershe/dotfiles ~/dotfiles && bash ~/dotfiles/entry.sh
 ```
 
 ## Links
