@@ -6,5 +6,9 @@ thunderbird
 discord
 thunderbird
 bitwarden
+bluez
+bluez-utils
+bluez-deprecated-tools
 blueman
 bluetui
+
