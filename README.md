@@ -20,3 +20,4 @@ sudo pacman -Syu && sudo pacman -S git gum && git clone --branch endeavouros-res
 
 - [Arch Linux Packages Search](https://archlinux.org/packages/)
 - [Arch Linux AUR Packages Search](https://aur.archlinux.org/packages)
+- [System maintenance - Arch Wiki](https://wiki.archlinux.org/title/System_maintenance)
