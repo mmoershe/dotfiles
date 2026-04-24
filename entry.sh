@@ -7,6 +7,7 @@ options=(
     "update"
     "install packages"
     "stow all"
+    "special install"
 )
 
 choice=$(gum choose --header="What would you like to do?" "${options[@]}")
@@ -35,5 +36,10 @@ fi
 
 if [[ $choice == "stow all" ]]; then
     source "$SCRIPTS_DIR/stow_all.sh"
+    stow_all
+fi
+
+if [[ $choice == "special install" ]]; then
+    source "$SCRIPTS_DIR/install_specials.sh"
     stow_all
 fi
