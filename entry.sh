@@ -17,10 +17,6 @@ choice=$(gum choose --header="What would you like to do?" "${options[@]}")
     exit 0
 }
 
-echo
-echo "You chose '$choice'..."
-echo
-
 if [[ $choice == "update" ]]; then
     echo "sudo pacman -Syu"
     sudo pacman -Syu
@@ -41,5 +37,5 @@ fi
 
 if [[ $choice == "special install" ]]; then
     source "$SCRIPTS_DIR/install_specials.sh"
-    stow_all
+    special_install
 fi

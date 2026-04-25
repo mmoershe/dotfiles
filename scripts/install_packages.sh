@@ -113,9 +113,6 @@ install_packages() {
         install_aur_packages_from_file $PACKAGES_AUR_DIR/desktop.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/thiollier.txt
     fi
-
-    echo
-    echo "bye $PROFILE!"
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
