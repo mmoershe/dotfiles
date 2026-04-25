@@ -24,6 +24,10 @@ System-wide ly configuration files can be found in `/etc/ly/config.ini`.
   - copy `blackhole-smooth-240x67.dur` from this directory into `/etc/ly/`
   - set `animation = dur_file`
   - set `dur_file_path = /etc/ly/blackhole-smooth-240x67.dur`
+- use vim mode
+  - set `vi_mode = true`
+  - set `vi_default_mode = insert`
+  - (obviously Ly won't accept _capslock_ as _escape_ to switch to normal mode, which is a little annoying)
 - (optional) show battery status
   - find out battery_id
     - `ls /sys/class/power_supply/`
