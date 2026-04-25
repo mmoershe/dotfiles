@@ -12,3 +12,6 @@ make
 lua
 nodejs
 npm
+ast-grep
+lua51
+tectonic
