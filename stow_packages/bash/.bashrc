@@ -7,3 +7,4 @@ echo
 
 alias lg="lazygit"
 alias ls="eza"
+alias vactivate="source venv/bin/activate"
