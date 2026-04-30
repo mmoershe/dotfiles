@@ -1,0 +1,8 @@
+nvtop
+ollama
+rocm-hip-sdk
+rocm-opencl-sdk
+rocminfo
+clinfo
+lact
+radeontop

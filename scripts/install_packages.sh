@@ -90,6 +90,7 @@ install_packages() {
         install_pacman_packages_from_file $PACKAGES_DIR/hyprland.txt
         install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
         install_pacman_packages_from_file $PACKAGES_DIR/games.txt
+        install_pacman_packages_from_file $PACKAGES_DIR/lothric.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/code.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/desktop.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/games.txt
