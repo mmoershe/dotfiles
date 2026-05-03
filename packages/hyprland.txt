@@ -1,0 +1,10 @@
+hyprland
+hyprpaper
+hyprlock
+hypridle
+waybar
+mako
+wofi
+ttf-jetbrains-mono-nerd
+wl-clipboard
+

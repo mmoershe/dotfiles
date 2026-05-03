@@ -1,0 +1,2 @@
+localsend-bin
+zoom

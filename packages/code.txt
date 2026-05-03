@@ -1,0 +1,17 @@
+opencode
+nvim
+luarocks
+prettier
+marksman
+fd
+ripgrep
+fzf
+tree-sitter-cli
+gcc
+make
+lua
+nodejs
+npm
+ast-grep
+lua51
+tectonic
