@@ -15,6 +15,7 @@ sudo pacman -Syu && sudo pacman -S git gum && git clone https://github.com/mmoer
 - [Switch and customize Ly Display Manager](./guides/ly/README.md)
 - [Switch Grub Theme](./guides/grub/README.md)
 - [Bluetooth](/guides/bluetooth/README.md)
+- [Gnome Settings](/guides/gnome_settings/README.md)
 
 ## Links
 
