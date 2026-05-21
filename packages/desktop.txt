@@ -17,3 +17,4 @@ wireplumber
 xdg-desktop-portal
 xdg-desktop-portal-gnome
 xdg-desktop-portal-wlr
+libreoffice-fresh
