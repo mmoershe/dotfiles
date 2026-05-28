@@ -35,7 +35,16 @@ hl.device({
 -- Default Monitor
 hl.monitor({ output = "", mode = "preferred", position = "auto", scale = 1 })
 
--- require("override")
 require("bindings")
 require("autostart")
 require("looknfeel")
+
+local handle = io.popen("hostname")
+local hostname = handle:read("*a"):gsub("\n$", "")
+handle:close()
+
+if hostname == "lothric" then
+	require("override_lothric")
+elseif hostname == "thiollier" then
+	require("override_thiollier")
+end

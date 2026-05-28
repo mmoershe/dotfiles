@@ -1,4 +1,4 @@
-local mainMod = "SUPER"
+mainMod = "SUPER"
 
 ----------------
 -- Navigation --
