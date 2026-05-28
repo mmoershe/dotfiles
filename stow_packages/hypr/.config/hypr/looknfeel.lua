@@ -1,5 +1,3 @@
--- ~/.config/hypr/settings.lua
-
 -- ======================
 -- CURVES / BEZIERS
 -- ======================
