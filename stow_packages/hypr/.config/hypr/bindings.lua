@@ -64,11 +64,11 @@ hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:mag
 -- ======================
 -- GENERAL BINDS
 -- ======================
-hl.bind(mainMod .. " + CTRL + Return", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + CTRL + Return", hl.dsp.exec_cmd(Terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(FileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(Menu))
 
 hl.bind(mainMod .. " + Backspace", hl.dsp.exec_cmd("makoctl dismiss"))
 hl.bind(mainMod .. " + CTRL + Backspace", hl.dsp.exec_cmd("makoctl dismiss --all"))
