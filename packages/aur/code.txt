@@ -1,3 +1,4 @@
 vscodium-bin
 durdraw
 postman-bin
+mongodb-compass-bin
