@@ -20,34 +20,34 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize())
 -- Workspaces --
 ----------------
 hl.bind(mainMod .. " + Return", hl.dsp.focus({ workspace = "1" }))
-hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.window.move({ workspace = "1" }))
+hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.window.move({ workspace = "1", follow = false }))
 
 hl.bind(mainMod .. " + N", hl.dsp.focus({ workspace = "2" }))
-hl.bind(mainMod .. " + SHIFT + N", hl.dsp.window.move({ workspace = "2" }))
+hl.bind(mainMod .. " + SHIFT + N", hl.dsp.window.move({ workspace = "2", follow = false }))
 
 hl.bind(mainMod .. " + M", hl.dsp.focus({ workspace = "3" }))
-hl.bind(mainMod .. " + SHIFT + M", hl.dsp.window.move({ workspace = "3" }))
+hl.bind(mainMod .. " + SHIFT + M", hl.dsp.window.move({ workspace = "3", follow = false }))
 
 hl.bind(mainMod .. " + B", hl.dsp.focus({ workspace = "4" }))
-hl.bind(mainMod .. " + SHIFT + B", hl.dsp.window.move({ workspace = "4" }))
+hl.bind(mainMod .. " + SHIFT + B", hl.dsp.window.move({ workspace = "4", follow = false }))
 
 hl.bind(mainMod .. " + P", hl.dsp.focus({ workspace = "5" }))
-hl.bind(mainMod .. " + SHIFT + P", hl.dsp.window.move({ workspace = "5" }))
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.window.move({ workspace = "5", follow = false }))
 
 hl.bind(mainMod .. " + Z", hl.dsp.focus({ workspace = "6" }))
-hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.window.move({ workspace = "6" }))
+hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.window.move({ workspace = "6", follow = false }))
 
 hl.bind(mainMod .. " + U", hl.dsp.focus({ workspace = "7" }))
-hl.bind(mainMod .. " + SHIFT + U", hl.dsp.window.move({ workspace = "7" }))
+hl.bind(mainMod .. " + SHIFT + U", hl.dsp.window.move({ workspace = "7", follow = false }))
 
 hl.bind(mainMod .. " + O", hl.dsp.focus({ workspace = "8" }))
-hl.bind(mainMod .. " + SHIFT + O", hl.dsp.window.move({ workspace = "8" }))
+hl.bind(mainMod .. " + SHIFT + O", hl.dsp.window.move({ workspace = "8", follow = false }))
 
 hl.bind(mainMod .. " + I", hl.dsp.focus({ workspace = "9" }))
-hl.bind(mainMod .. " + SHIFT + I", hl.dsp.window.move({ workspace = "9" }))
+hl.bind(mainMod .. " + SHIFT + I", hl.dsp.window.move({ workspace = "9", follow = false }))
 
 hl.bind(mainMod .. " + W", hl.dsp.focus({ workspace = "10" }))
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.window.move({ workspace = "10" }))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.window.move({ workspace = "10", follow = false }))
 
 -- Number row fallback
 for i = 1, 9 do
