@@ -42,12 +42,16 @@ hl.bind(mainMod .. " + SHIFT + U", hl.dsp.window.move({ workspace = "7", follow 
 
 hl.bind(mainMod .. " + O", hl.dsp.focus({ workspace = "8" }))
 hl.bind(mainMod .. " + SHIFT + O", hl.dsp.window.move({ workspace = "8", follow = false }))
+hl.window_rule({ match = { class = "thunderbird" }, workspace = "8 silent" })
 
 hl.bind(mainMod .. " + I", hl.dsp.focus({ workspace = "9" }))
 hl.bind(mainMod .. " + SHIFT + I", hl.dsp.window.move({ workspace = "9", follow = false }))
+hl.window_rule({ match = { class = "slack" }, workspace = "9 silent" })
+hl.window_rule({ match = { class = "discord" }, workspace = "9 silent" })
 
 hl.bind(mainMod .. " + W", hl.dsp.focus({ workspace = "10" }))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.window.move({ workspace = "10", follow = false }))
+hl.window_rule({ match = { class = "steam" }, workspace = "10 silent" })
 
 -- Number row fallback
 for i = 1, 9 do
@@ -73,8 +77,8 @@ hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(Menu))
 hl.bind(mainMod .. " + Backspace", hl.dsp.exec_cmd("makoctl dismiss"))
 hl.bind(mainMod .. " + CTRL + Backspace", hl.dsp.exec_cmd("makoctl dismiss --all"))
 
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
-hl.bind(mainMod .. " + CTRL + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
+hl.bind(mainMod .. " + CTRL + F", hl.dsp.window.fullscreen({ action = "toggle" }))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 
 -- ======================
 -- MEDIA KEYS
