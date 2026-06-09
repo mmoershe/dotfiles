@@ -1,4 +1,5 @@
-local MAIN_MONITOR = "HDMI-A-1"
+-- local MAIN_MONITOR = "HDMI-A-1"
+local MAIN_MONITOR = "DP-1"
 local SECONDARY_MONITOR = "eDP-1"
 
 hl.monitor({
