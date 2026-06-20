@@ -1,5 +1,5 @@
 nvtop
-ollama
+ollama-rocm
 rocm-hip-sdk
 rocm-opencl-sdk
 rocminfo
