@@ -2,3 +2,5 @@ vscodium-bin
 durdraw
 postman-bin
 mongodb-compass-bin
+claude-code
+claude-desktop-bin
