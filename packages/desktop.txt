@@ -4,7 +4,6 @@ nautilus
 brightnessctl
 thunderbird
 discord
-thunderbird
 bitwarden
 bluez
 bluez-utils
