@@ -54,4 +54,6 @@ if hostname == "lothric" then
 	require("override_lothric")
 elseif hostname == "thiollier" then
 	require("override_thiollier")
+elseif hostname == "rellana" then
+	require("override_rellana")
 end
