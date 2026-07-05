@@ -16,3 +16,4 @@ ast-grep
 lua51
 tectonic
 lazydocker
+zed
