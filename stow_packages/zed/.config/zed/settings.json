@@ -19,7 +19,9 @@
     "catppuccin-icons": true,
     "dracula": true,
     "git-firefly": true,
-    "html": true
+    "html": true,
+    "dockerfile": true,
+    "docker-compose": true
   },
   "agent_servers": {
     "claude-acp": {
