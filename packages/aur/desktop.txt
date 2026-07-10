@@ -1,2 +1,5 @@
 localsend-bin
 zoom
+gnome-shell-extension-clipboard-indicator
+gnome-shell-extension-dash-to-dock
+gnome-shell-extension-blur-my-shell
