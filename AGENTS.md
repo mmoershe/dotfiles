@@ -41,6 +41,8 @@ Package lists are plain newline-separated `.txt` files (comments with `#` and em
 
 `scripts/install_packages.sh` hardcodes, per profile (`lothric`/`rellana`/`thiollier`), which of these files get installed and in what order — it is **not** auto-discovered from the directory contents. When adding a package list file, you must also wire it into the matching profile block in `install_packages()`. Profile defaults to `$(whoami)`, so a machine's hostname/username is expected to match one of the three profile names.
 
+Prefer official repo (pacman) packages over AUR ones: before adding a package to `packages/aur/`, check whether it exists in the official repos (`pacman -Si <pkg>`) and if so, put it in the matching `packages/*.txt` list instead. Only use `packages/aur/` for packages that are not available in the official repos.
+
 ## Dotfiles (`stow_packages/`)
 
 Each subdirectory (`bash`, `fastfetch`, `hypr`, `kitty`, `mako`, `waybar`, `wofi`, `wallpapers`) is a GNU Stow package mirroring `$HOME`'s layout. `stow_all()` runs `stow --target ~ */` from inside `stow_packages/`, symlinking all packages at once — there's no per-machine selection here, all stow packages apply to all machines.
