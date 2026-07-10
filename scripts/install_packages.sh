@@ -94,6 +94,7 @@ install_packages() {
         install_aur_packages_from_file $PACKAGES_AUR_DIR/code.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/desktop.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/games.txt
+        install_aur_packages_from_file $PACKAGES_AUR_DIR/lothric.txt
     fi
 
     if [[ $PROFILE == "rellana" ]]; then
