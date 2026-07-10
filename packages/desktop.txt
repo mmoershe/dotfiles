@@ -18,3 +18,4 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-wlr
 libreoffice-fresh
 gnome-shell-extensions
+gnome-shell-extension-appindicator
