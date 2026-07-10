@@ -7,6 +7,7 @@ special_install() {
     options=(
         "install docker"
         "install nvim config"
+        "load gnome settings"
     )
 
     choice=$(gum choose --header="Choose a special install" "${options[@]}")
@@ -26,6 +27,12 @@ special_install() {
         echo "Installing Neovim config..."
         source "$SPECIAL_INSTALL_DIR/install_nvim_config.sh"
         install_nvim_config
+    fi
+
+    if [[ $choice == "load gnome settings" ]]; then
+        echo "Loading Gnome settings..."
+        source "$SPECIAL_INSTALL_DIR/load_gnome_settings.sh"
+        load_gnome_settings
     fi
 }
 
