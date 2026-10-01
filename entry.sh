@@ -18,11 +18,8 @@ choice=$(gum choose --header="What would you like to do?" "${options[@]}")
 }
 
 if [[ $choice == "update" ]]; then
-    echo "sudo pacman -Syu"
-    sudo pacman -Syu
-
-    echo "yay -Syu --noconfirm"
-    yay -Syu --noconfirm
+    source "$SCRIPTS_DIR/update.sh"
+    update
 fi
 
 if [[ $choice == "install packages" ]]; then
