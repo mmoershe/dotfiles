@@ -7,33 +7,33 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Catppuccin Latte",
-  "ui_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
-    "anthropic_retention": false
-  },
-  "vim_mode": true,
-  "auto_install_extensions": {
-    "catppuccin-icons": true,
-    "dracula": true,
-    "git-firefly": true,
-    "html": true,
-    "dockerfile": true,
-    "docker-compose": true
-  },
-  "agent_servers": {
-    "claude-acp": {
-      "type": "registry"
+    "icon_theme": "Catppuccin Latte",
+    "ui_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+        "anthropic_retention": false
+    },
+    "vim_mode": true,
+    "auto_install_extensions": {
+        "catppuccin-icons": true,
+        "dracula": true,
+        "git-firefly": true,
+        "html": true,
+        "dockerfile": true,
+        "docker-compose": true
+    },
+    "agent_servers": {
+        "claude-acp": {
+            "type": "registry"
+        }
+    },
+    "ui_font_size": 16,
+    "buffer_font_size": 15,
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "Dracula"
     }
-  },
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Dracula"
-  }
 }
