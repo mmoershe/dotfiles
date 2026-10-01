@@ -1,6 +1,16 @@
-# Display Manager - Ly
+# Display Manager
 
-## Use ly as Display Manager
+| Plasma Login Manager         | LY                           |
+| ---------------------------- | ---------------------------- |
+| - looks okay                 | + looks cool af              |
+| - just works with everything | -problems with wider screens |
+| + customizable               | + light-weight               |
+
+## Plasma Login Manager
+
+## Ly
+
+### Setup
 
 ```bash
 systemctl enable --now ly@tty5.service
@@ -11,14 +21,16 @@ systemctl disable getty@tty5.service
 ```
 
 ```bash
+# Disable the other display managers, for example:
 systemctl disable gdm.service
+systemctl disable plasmalogin.service
 ```
 
-## Customization
+### Customization
 
-System-wide ly configuration files can be found in `/etc/ly/config.ini`.
+System-wide Ly configuration files can be found in `/etc/ly/config.ini`.
 
-### Changes to make:
+#### Changes to make:
 
 - use custom animation
   - copy `blackhole-smooth-240x67.dur` from this directory into `/etc/ly/`
