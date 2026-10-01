@@ -5,6 +5,7 @@ SCRIPTS_DIR="$BASE_DIR/scripts"
 
 options=(
     "update"
+    "maintenance"
     "install packages"
     "stow all"
     "special install"
@@ -20,6 +21,11 @@ choice=$(gum choose --header="What would you like to do?" "${options[@]}")
 if [[ $choice == "update" ]]; then
     source "$SCRIPTS_DIR/update.sh"
     update
+fi
+
+if [[ $choice == "maintenance" ]]; then
+    source "$SCRIPTS_DIR/maintenance.sh"
+    maintenance
 fi
 
 if [[ $choice == "install packages" ]]; then

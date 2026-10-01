@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents (Claude Code, and any other AGEN
 
 ## What this repo is
 
-Personal Arch Linux dotfiles, distributed across three machines with different package/hardware needs. There is no build/test/lint tooling — this is a collection of shell scripts, GNU Stow packages, and package lists, driven by a single entry point.
+Personal EndeavourOS (Arch-based) dotfiles, distributed across three machines with different package/hardware needs. There is no build/test/lint tooling — this is a collection of shell scripts, GNU Stow packages, and package lists, driven by a single entry point.
 
 ## Machine profiles
 
@@ -24,16 +24,19 @@ Which package lists and config each profile actually installs is defined in `ins
 bash entry.sh
 ```
 
-This shows a `gum choose` menu with four actions, each backed by a script in `scripts/`:
+This shows a `gum choose` menu with five actions, each backed by a script in `scripts/`:
 
 | Menu choice      | Script                        | Function           |
 | ---------------- | ----------------------------- | ------------------ |
 | update           | `scripts/update.sh`           | `update`           |
+| maintenance      | `scripts/maintenance.sh`      | `maintenance`      |
 | install packages | `scripts/install_packages.sh` | `install_packages` |
 | stow all         | `scripts/stow_all.sh`         | `stow_all`         |
 | special install  | `scripts/install_specials.sh` | `special_install`  |
 
 `update` runs `pacman -Syu` then `yay -Syu`, both with `--noconfirm`.
+
+`maintenance` is the occasional (every few months) housekeeping run. In order, it: ranks the Arch mirrors with `reflector` (German https mirrors) and the EndeavourOS mirrors with `eos-rankmirrors`, calls `update`, removes orphaned packages (pacman asks for confirmation — deliberately no `--noconfirm`), trims the pacman cache with `paccache` and the yay build cache, and finally only reports unmerged `.pacnew`/`.pacsave` files and failed systemd units. It relies on `reflector`, `eos-rankmirrors` and `pacman-contrib`, which EndeavourOS ships by default, so they are not in the package lists.
 
 All scripts are meant to be sourced (they guard `main`-style execution with `if [[ "${BASH_SOURCE[0]}" == "${0}" ]]`), so each defines a shell function of the same name rather than running top-level code. When editing these, preserve that pattern — other scripts are supposed to be able to rely on `source`ing other scripts and then calling its function.
 
