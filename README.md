@@ -24,7 +24,7 @@ These experiments taught me what I'm actually looking for in a computer, what's 
 ### Quickstart
 
 ```bash
-sudo pacman -Syu && sudo pacman -S git gum && git clone https://github.com/mmoershe/dotfiles ~/dotfiles && bash ~/dotfiles/entry.sh
+sudo pacman -Syu && sudo pacman -S git gum && git clone https://github.com/mmoershe/dotfiles ~/dotfiles && bash ~/dotfiles/scripts/bootstrap.sh
 ```
 
 ### Further Setup
