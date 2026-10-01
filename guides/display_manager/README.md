@@ -8,6 +8,29 @@
 
 ## Plasma Login Manager
 
+### Setup
+
+```bash
+sudo pacman -S plasma-login-manager
+```
+
+```bash
+# Disable the other display managers, for example:
+systemctl disable ly@tty5.service
+systemctl disable gdm.service
+```
+
+```bash
+# Only needed when coming from Ly, which took over tty5:
+systemctl enable getty@tty5.service
+```
+
+```bash
+systemctl enable plasmalogin.service
+```
+
+Reboot afterwards.
+
 ## Ly
 
 ### Setup
