@@ -76,43 +76,34 @@ install_packages() {
     PROFILE="${1:-$(whoami)}"
     VALID_PROFILES=("lothric" "rellana" "thiollier")
 
-    if [[ ! " ${VALID_PROFILES[@]} " =~ " ${PROFILE} " ]]; then
-        echo "Error: Invalid profile '$PROFILE'"
-        echo "Valid profiles: ${VALID_PROFILES[*]}"
-        exit 1
+    if [[ " ${VALID_PROFILES[@]} " =~ " ${PROFILE} " ]]; then
+        echo "Installing $PROFILE packages"
+    else
+        echo "Warning: Unknown profile '$PROFILE' (valid profiles: ${VALID_PROFILES[*]})"
+        echo "Installing only the packages shared by all profiles"
     fi
 
-    echo "Installing $PROFILE packages"
+    # Shared by every profile
+    install_pacman_packages_from_file $PACKAGES_DIR/core.txt
+    install_pacman_packages_from_file $PACKAGES_DIR/code.txt
+    install_pacman_packages_from_file $PACKAGES_DIR/hyprland.txt
+    install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
 
     if [[ $PROFILE == "lothric" ]]; then
-        install_pacman_packages_from_file $PACKAGES_DIR/core.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/code.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/hyprland.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
         install_pacman_packages_from_file $PACKAGES_DIR/games.txt
         install_pacman_packages_from_file $PACKAGES_DIR/lothric.txt
-        install_aur_packages_from_file $PACKAGES_AUR_DIR/code.txt
-        install_aur_packages_from_file $PACKAGES_AUR_DIR/desktop.txt
+    fi
+
+    # Shared by every profile
+    install_aur_packages_from_file $PACKAGES_AUR_DIR/code.txt
+    install_aur_packages_from_file $PACKAGES_AUR_DIR/desktop.txt
+
+    if [[ $PROFILE == "lothric" ]]; then
         install_aur_packages_from_file $PACKAGES_AUR_DIR/games.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/lothric.txt
     fi
 
-    if [[ $PROFILE == "rellana" ]]; then
-        install_pacman_packages_from_file $PACKAGES_DIR/core.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/code.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/hyprland.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
-        install_aur_packages_from_file $PACKAGES_AUR_DIR/code.txt
-        install_aur_packages_from_file $PACKAGES_AUR_DIR/desktop.txt
-    fi
-
     if [[ $PROFILE == "thiollier" ]]; then
-        install_pacman_packages_from_file $PACKAGES_DIR/core.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/code.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/hyprland.txt
-        install_pacman_packages_from_file $PACKAGES_DIR/desktop.txt
-        install_aur_packages_from_file $PACKAGES_AUR_DIR/code.txt
-        install_aur_packages_from_file $PACKAGES_AUR_DIR/desktop.txt
         install_aur_packages_from_file $PACKAGES_AUR_DIR/thiollier.txt
     fi
 }

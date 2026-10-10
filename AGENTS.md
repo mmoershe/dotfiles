@@ -54,13 +54,13 @@ bash scripts/bootstrap.sh
 
 Package lists are plain newline-separated `.txt` files (comments with `#` and empty lines are skipped), split by category: `core.txt`, `code.txt`, `hyprland.txt`, `desktop.txt`, `games.txt`, plus optional per-machine files named after the profile (currently only `lothric.txt`) for machine-specific pacman packages. `packages/aur/` uses the same naming for AUR (yay) packages, but only contains the lists that are actually needed (currently `code.txt`, `desktop.txt`, `games.txt`, `lothric.txt`, `thiollier.txt`).
 
-`scripts/install_packages.sh` hardcodes, per profile (`lothric`/`rellana`/`thiollier`), which of these files get installed and in what order — it is **not** auto-discovered from the directory contents. When adding a package list file, you must also wire it into the matching profile block in `install_packages()`. Profile defaults to `$(whoami)`, so a machine's hostname/username is expected to match one of the three profile names.
+`scripts/install_packages.sh` hardcodes which of these files get installed and in what order — it is **not** auto-discovered from the directory contents. The lists shared by all profiles (`core`, `code`, `hyprland`, `desktop`, plus the AUR `code` and `desktop`) are installed unconditionally; the remaining lists sit in per-profile blocks (`lothric`/`thiollier`). When adding a package list file, you must also wire it into `install_packages()`, either as a shared list or in the matching profile block. Profile defaults to `$(whoami)`, so a machine's hostname/username is expected to match one of the three profile names; an unknown profile is not an error — it prints a warning and installs only the shared lists.
 
 Prefer official repo (pacman) packages over AUR ones: before adding a package to `packages/aur/`, check whether it exists in the official repos (`pacman -Si <pkg>`) and if so, put it in the matching `packages/*.txt` list instead. Only use `packages/aur/` for packages that are not available in the official repos.
 
 ## Dotfiles (`stow_packages/`)
 
-Each subdirectory (`bash`, `fastfetch`, `hypr`, `kitty`, `mako`, `waybar`, `wofi`, `wallpapers`, `zed`) is a GNU Stow package mirroring `$HOME`'s layout. `stow_all()` runs `stow --target ~ */` from inside `stow_packages/`, symlinking all packages at once — there's no per-machine selection here, all stow packages apply to all machines.
+Each subdirectory (`bash`, `fastfetch`, `hypr`, `kitty`, `mako`, `waybar`, `wofi`, `wallpapers`, `zed`) is a GNU Stow package mirroring `$HOME`'s layout. `stow_all()` runs `stow --target ~ */` from inside `stow_packages/`, symlinking all packages at once — there's no per-machine selection here, all stow packages apply to all machines. Before stowing, a pre-existing regular (non-symlink) `~/.bashrc` is moved to `~/.bashrc.bak`, since a fresh install ships one and a single conflict makes stow abort every package.
 
 ## Special installs (`scripts/special_installs/`)
 
