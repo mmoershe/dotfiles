@@ -7,7 +7,7 @@ onefetch
 git
 eza
 vim
-nvim
+neovim
 github-cli
 lazygit
 stow

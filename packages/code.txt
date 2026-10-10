@@ -1,5 +1,4 @@
 opencode
-nvim
 luarocks
 prettier
 marksman
