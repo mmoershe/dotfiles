@@ -34,6 +34,7 @@ sudo pacman -Syu && sudo pacman -S --needed git && { [ -d ~/dotfiles ] || git cl
 ### Further Setup
 
 - [Display Manager](./guides/display_manager/README.md)
+- [KDE Plasma Settings](/guides/kde_plasma/README.md)
 - [Switch Grub Theme](./guides/grub/README.md)
 - [Bluetooth](./guides/bluetooth/README.md)
 - [Gnome Settings](./guides/gnome_settings/README.md)
