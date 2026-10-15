@@ -8,6 +8,7 @@ special_install() {
         "install docker"
         "install nvim config"
         "load gnome settings"
+        "setup ssh"
     )
 
     choice=$(gum choose --header="Choose a special install" "${options[@]}")
@@ -33,6 +34,12 @@ special_install() {
         echo "Loading Gnome settings..."
         source "$SPECIAL_INSTALL_DIR/load_gnome_settings.sh"
         load_gnome_settings
+    fi
+
+    if [[ $choice == "setup ssh" ]]; then
+        echo "Setting up ~/.ssh..."
+        source "$SPECIAL_INSTALL_DIR/setup_ssh.sh"
+        setup_ssh
     fi
 }
 

@@ -64,7 +64,7 @@ Each subdirectory (`bash`, `fastfetch`, `hypr`, `kitty`, `mako`, `waybar`, `wofi
 
 ## Special installs (`scripts/special_installs/`)
 
-One-off installers not tied to the regular package flow (currently Docker setup, cloning a separate `config.nvim` repo into `~/.config/nvim`, and loading `guides/gnome_settings/gnome-settings.ini` via `dconf load`). New special installs need a script here plus an entry added to the `options` array and if-chain in `scripts/install_specials.sh`.
+One-off installers not tied to the regular package flow (currently Docker setup, cloning a separate `config.nvim` repo into `~/.config/nvim`, loading `guides/gnome_settings/gnome-settings.ini` via `dconf load`, and creating `~/.ssh` with correct permissions, a template config and an optional ed25519 key). New special installs need a script here plus an entry added to the `options` array and if-chain in `scripts/install_specials.sh`.
 
 ## Guides (`guides/`)
 
