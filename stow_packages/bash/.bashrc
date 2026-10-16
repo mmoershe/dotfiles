@@ -1,9 +1,11 @@
 eval "$(starship init bash)"
 
-# TERMINAL STARTUP
-echo
-fastfetch -c paleofetch --logo arch2
-echo
+# TERMINAL STARTUP (only in interactive shells)
+if [[ $- == *i* ]]; then
+    echo
+    fastfetch -c paleofetch --logo arch2
+    echo
+fi
 
 alias lg="lazygit"
 alias ls="eza"
